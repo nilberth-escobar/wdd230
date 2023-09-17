@@ -1,8 +1,8 @@
 /* base.css */
-/*@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
 body {
-    font-family: 'Arial', sans-serif; /* Use Google Fonts API to link a preferred font */
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -58,6 +58,7 @@ main {
     display: grid; /* Use CSS Grid */
     gap: 20px; /* Add some space between grid items */
     grid-template-columns: 1fr; /* Single column layout */
+    font-family: 'Roboto Condensand', 'Arial', sans-serif;
 }
 
 .card {
@@ -82,7 +83,8 @@ h2 {
     text-align: center;
     background-color: #0b4f6c;
     color: white;
-   
+    font-family: 'Roboto Condensant';
+    
 }
 
 h3 {
@@ -91,6 +93,7 @@ h3 {
     text-align: center;
     background-color: #0b4f6c;
     color: white;
+    font-family: 'Roboto Condensand';
 }
 
 ul {
