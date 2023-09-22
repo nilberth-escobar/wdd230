@@ -1,0 +1,11 @@
+/* Large Screens (Desktops) */
+@media screen and (min-width: 901px) {
+    main {
+        grid-template-columns: 1fr 1fr; /* Two column layout */
+    }
+
+    .card {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}

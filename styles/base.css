@@ -22,18 +22,17 @@ header img {
     height: 150px;
 }
 
-
 nav {
     background-color: #333;
     color: #fff;
     
 }
 
-
 nav ul {
     list-style-type: none;
     padding: 0;
-    display: grid;
+    /*display: grid;*/
+    display: flex;
     justify-content: center;
 }
 
@@ -47,7 +46,6 @@ nav a {
     font-weight: bold;
     font-size: 18px;
 }
-
 
 main {
     max-width: 800px;
