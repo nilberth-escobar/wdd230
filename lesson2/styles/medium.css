@@ -1,0 +1,12 @@
+@media (min-width: 768px) and (max-width: 991px) {
+    section {
+        width: 48%;
+        display: inline-block;
+        margin-right: 2%;
+    }
+
+    /*targeting every 2 element in the section tag*/
+    section:nth-child(2n) {
+        margin-right: 0;
+    }
+}

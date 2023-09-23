@@ -1,0 +1,11 @@
+@media (min-width: 992px) {
+    section {
+        width: 30%;
+        display: inline-block;
+        margin-right: 3.33%;
+    }
+/*targeting every third element in the section tag*/
+    section:nth-child(3n) {
+        margin-right: 0;
+    }
+}
