@@ -82,10 +82,12 @@ h2 {
     background-color: #0b4f6c;
     color: white;
     font-family: 'Roboto Condensant';
+    margin:auto;
     
 }
 
 h3 {
+    display: block;
     font-size: 20px;
     margin-bottom: 10px;
     text-align: center;
