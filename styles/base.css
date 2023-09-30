@@ -1,5 +1,12 @@
 /* base.css */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 body {
     font-family: 'Arial', sans-serif;
@@ -47,6 +54,10 @@ nav a {
     font-size: 18px;
 }
 
+.open-menu, .close-menu{
+    display: none;
+}
+
 main {
     max-width: 800px;
     margin: 20px auto;
@@ -58,6 +69,7 @@ main {
     grid-template-columns: 1fr; /* Single column layout */
     font-family: 'Roboto Condensand', 'Arial', sans-serif;
 }
+
 
 .card {
     padding: 20px;
@@ -115,4 +127,15 @@ footer {
 #lastModified {
     font-size: 15px;
     color: #F4AEF4;
+}
+
+.google-map{
+    width: 100%;
+    
+}
+
+.map-responsive{
+    max-width: 835px;
+    
+    margin: 1px auto;
 }

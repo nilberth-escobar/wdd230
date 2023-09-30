@@ -1,29 +1,64 @@
-/* Small Screens (Mobile) */
-@media screen and (max-width: 600px) {
-    header {
-        padding: 10px;
+@media screen and (max-width: 550px) {
+    .open-menu,
+    .close-menu {
+        display: flex;
+        border: 0;
+        font-size: 2.25rem;
+        background-color: transparent;
+        cursor: pointer;
     }
 
-    header img {
-        width: 100px;
-        height: 100px;
+    .open-menu {
+        color: #1c1c1c;
+        
+    }
+    .open-menu{
+        display: flex;
+        margin: 20px auto 0px ;
+        color: #3943b7;
     }
 
-    nav ul {
+    .close-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
     }
 
-    nav li {
-        margin: 10px 0;
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
     }
 
-    nav a {
-        font-size: 16px;
+    .nav-list li a {
+        color: #ecececec;
     }
 
-    main {
-        margin: 10px;
-        padding: 10px;
+    .google-map{
+        width: 100%;
     }
+
+   .map-responsive{
+        max-width: 800px;
+        
+   }
+        
 }
