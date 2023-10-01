@@ -3,13 +3,13 @@
 
 
 :root {
-  /* change the values below to your colors from your palette */
+  /* colors */
   --primary-color: #FFD166   ;
   --secondary-color: #B0DB43 ;
   --accent1-color: #ffffff;
   --accent2-color: #06A2CB;
 
-  /* change the values below to your chosen font(s) */
+  /* fonts*/
   --heading-font: "Bebas Neue";
   --paragraph-font: "Sofia Sans";
 
@@ -108,8 +108,24 @@ nav a {
   min-width: 120px;
   text-decoration: none;
   padding: 10px;
+}
+
+.navbar ul{
+  list-style: none;
   text-align: center;
 }
+
+.navbar li{
+  display: inline-block;
+  
+}
+
+.navbar a{
+  text-decoration: none;
+  width: 100%;
+  align-self: center;
+}
+
 nav a:link, nav a:visited {
   color: var(--nav-link-color);
 }
