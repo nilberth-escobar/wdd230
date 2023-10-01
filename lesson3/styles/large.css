@@ -1,0 +1,22 @@
+/* Larger View */
+@media screen and (min-width: 1024px) {
+    body {
+      font-size: 20px;
+    }
+  
+    header {
+      padding: 2em;
+    }
+  
+    nav {
+      font-size: 1.5em;
+    }
+  
+    .sitemap {
+      grid-template-columns: repeat(6, 15%);
+    }
+  
+    .sm-home, .sm-page2, .sm-page3 {
+      line-height: 4em;
+    }
+  }

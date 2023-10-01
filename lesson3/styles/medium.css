@@ -1,0 +1,22 @@
+/* Medium View */
+@media screen and (max-width: 1023px) {
+    body {
+      font-size: 18px;
+    }
+  
+    header {
+      padding: 1.5em;
+    }
+  
+    nav {
+      font-size: 1.3em;
+    }
+  
+    .sitemap {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+    .sm-home, .sm-page2, .sm-page3 {
+      line-height: 3em;
+    }
+  }
