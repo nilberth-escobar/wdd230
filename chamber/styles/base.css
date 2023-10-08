@@ -1,0 +1,153 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #1D202B;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+	text-align: center;
+	
+	
+}
+
+nav li {
+    margin: 0 10px;
+	
+}
+
+nav a {
+    text-decoration: none;
+    
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav{
+	background-color: green;
+	display: flex;
+	text-align: center;
+	
+	justify-content: space-between;
+}
+
+nav .heading{
+	font-size: 30px;
+	text-align:left;
+	padding: 10px;
+	
+}
+
+.hero-image{
+	position: relative;
+	height: 800px;
+	overflow: hidden;
+	background: url('/chamber/images/hero-image.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	overflow: hidden;
+	color: white;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-weight: 800;
+
+	
+	
+}
+/* hidding the hamburger menu */
+.open-menu, .close-menu{
+    display: none;
+}
+
+.events-container {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+	gap: 20px;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+}
+
+.titulo {
+	font-size: 24px;
+	padding: 20px 0;
+}
+
+.current-events {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+	
+}
+
+.card {
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+
+	
+}
+
+.card .text {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+}
+
+.banner {
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px;
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+.banner ul {
+	list-style: none;
+
+}
+
+.banner ul li {
+	margin: 15px;
+	font-weight: bold;
+}
+
+.banner .boton {
+	background: #FFD600;
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	padding: 10px;
+	border: none;
+	border-radius: 100px;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+}
