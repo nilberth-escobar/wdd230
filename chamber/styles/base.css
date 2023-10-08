@@ -144,3 +144,33 @@ nav .heading{
 	font-family: 'Roboto', sans-serif;
 	cursor: pointer;
 }
+
+
+.weather {
+	background-color: #333; 
+	color: #fff; 
+	padding: 20px; 
+  }
+  
+  .weather h4 {
+	font-size: 24px; 
+  }
+  
+  
+  .company-spotlights {
+	background-color: #555; 
+	color: #fff; 
+	padding: 20px; 
+  }
+  
+  .company-spotlights h4 {
+	font-size: 24px; 
+  }
+
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+  

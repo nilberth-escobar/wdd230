@@ -66,9 +66,25 @@
     
       .card {
         width: 100%; /* Make each card take full width */
-      }
+    }
+
+     
+    .weather {
+        padding: 10px; 
+    }
+
+    .weather h4 {
+        font-size: 20px; 
+    }
 
     
+    .company-spotlights {
+        padding: 10px; 
+    }
+
+    .company-spotlights h4 {
+        font-size: 20px; 
+    }
     
          
 }
