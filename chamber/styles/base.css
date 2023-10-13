@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sofia+Sans:ital,wght@0,400;1,300&display=swap');
+
+:root {
+	/* colors */
+	--primary-color: #2f4858   ;
+	--secondary-color: #33658a ;
+	--accent1-color: #f26419;
+	--accent2-color: #55dde0;
+  
+	/* fonts*/
+	--heading-font: "Bebas Neue";
+	--paragraph-font: "Sofia Sans";
+}
+
 * {
 	padding: 0;
 	margin: 0;
