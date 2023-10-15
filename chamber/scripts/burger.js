@@ -1,12 +1,12 @@
-const nav = document.querySelector("#nav");
-const abrir = document.querySelector("#open");
-const cerrar = document.querySelector("#close");
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-abrir.addEventListener("click", () => {
-    nav.classList.add("visible");
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
 })
 
-cerrar.addEventListener("click", () => {
-    nav.classList.remove("visible");
-    
-})
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}))

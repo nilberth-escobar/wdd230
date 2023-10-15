@@ -1,59 +1,44 @@
 @media screen and (max-width: 550px) {
-    .open-menu,
-    .close-menu {
-        display: flex;
-        border: 0;
-        font-size: 1.25rem;
-        background-color: transparent;
-        cursor: pointer;
+
+    .hamburger{
+        display: block;
     }
 
-    .open-menu {
-        color: #1c1c1c;
-    }
-
-    .open-menu{
-        display: flex;
-        margin: 20px auto 0px ;
-        color: white;
-    }
-
-    .close-menu {
-        color: #ececec;
-    }
-
-    .nav {
+    .hamburger.active .bar:nth-child(2){
         opacity: 0;
-        visibility: hidden;
-        display: flex;
-        
-        align-items: center;
-        gap: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #1c1c1c;
-        padding: 1rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-        position: absolute;
-        z-index: 1001;        
     }
 
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
-    }
-    
-    .nav-list {
-       flex-direction: column;
-       align-self: flex-start;
-    
+    .hamburger.active .bar:nth-child(2){
+        transform: translateY(8px) rotate(45deg);
     }
 
-    .nav-list li a {
-        color: #ecececec;
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
     }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 100;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+    
+
+    /*EVENTS CONTAINER*/
 
     .events-container {
         grid-template-columns: 1fr; /* Set one column for small views */
