@@ -59,7 +59,7 @@ container-navbar{
 
 .nav-link{
 	transition: 0.3s ease-out;
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 .nav-link:hover{
@@ -166,7 +166,7 @@ h2{
 }
 
 .text{
-	color: white;
+	color: var(--accent1-color);
 }
 
 .banner {
