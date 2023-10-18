@@ -114,7 +114,7 @@ h2{
 	position: relative;
 	height: 800px;
 	overflow: hidden;
-	background: url('/chamber/images/hero-image.jpg') no-repeat center;
+	background-image: url("../images/hero-image.webp") no-repeat center;
 	background-size: cover;
 	}
 
