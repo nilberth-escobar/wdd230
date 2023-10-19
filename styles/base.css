@@ -59,24 +59,13 @@ nav a {
 }
 
 .hero-image{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-   
-}
-
-.hero picture{
-    width: 100%;
-    text-align: center;
+    max-width: 800px;
     
 }
 
-.hero img{
+picture img{
     width: 100%;
-    height: auto;
-    
 }
-
 
 main {
     max-width: 800px;
