@@ -60,11 +60,29 @@ nav a {
 
 .hero-image{
     max-width: 800px;
-    
+    position: relative;
 }
 
 picture img{
     width: 100%;
+}
+
+.hero-label{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border: 1px solid gray;
+    padding: 0.5rem;
+    box-shadow: 0 0 5px;
+    opacity: 0.75;
+}
+
+.hero-label p{
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 14px;
+    text-wrap: nowrap;
 }
 
 main {
@@ -78,7 +96,6 @@ main {
     grid-template-columns: 1fr; /* Single column layout */
     font-family: 'Roboto Condensand', 'Arial', sans-serif;
 }
-
 
 .card {
     padding: 20px;
