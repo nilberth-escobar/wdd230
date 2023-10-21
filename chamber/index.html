@@ -53,12 +53,30 @@
         
     <main>
         
-        <div class="hero-image">
+        <!--THIS WILL BE A OFICIAL CODE AFTER LESSON 6-->
+        <!-- <div class="hero-image">
             <!-- Hero image section -->
-            <div class="container">
+           <!-- <div class="container">
                 <!-- hero image content here -->
-                <h1><span>San Marcos Chamber of Commerce</span></h1>
+               <!-- <h1><span>San Marcos Chamber of Commerce</span></h1>
             </div>
+        </div> --> 
+
+        <!-- THIS WAS JUST ADDED FOR LESSON 6: RESPONSIVE IMAGES-->
+        <div class="hero-image">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 600px )" >
+                <source srcset="images/hero-medium.webp" media="(max-width: 900px )" >
+                <source srcset="images/hero-large.webp" media="(max-width: 1200px )" >
+                <img src="images/hero-large.webp" alt="">
+            </picture>
+            <p class="hero-large">
+                Large
+            </p>
+
+            <p class="hero-small">
+                Small
+            </p>
         </div>
 
     
