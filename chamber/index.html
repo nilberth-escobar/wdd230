@@ -13,6 +13,7 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/small.css">
 </head>
 <body>
@@ -57,7 +58,7 @@
         <!-- <div class="hero-image">
             <!-- Hero image section -->
            <!-- <div class="container">
-                <!-- hero image content here -->
+               <!-- hero image content here -->
                <!-- <h1><span>San Marcos Chamber of Commerce</span></h1>
             </div>
         </div> --> 
@@ -65,9 +66,9 @@
         <!-- THIS WAS JUST ADDED FOR LESSON 6: RESPONSIVE IMAGES-->
         <div class="hero-image">
             <picture>
-                <source srcset="images/hero-small.webp" media="(max-width: 600px )" >
-                <source srcset="images/hero-medium.webp" media="(max-width: 900px )" >
-                <source srcset="images/hero-large.webp" media="(max-width: 1200px )" >
+                <source srcset="images/hero-small.webp" media="(max-width: 576px )" >
+                <source srcset="images/hero-medium.webp" media="(max-width: 768px )" >
+                <!-- <source srcset="images/hero-large.webp" media="(max-width: 1200px )" > -->
                 <img src="images/hero-large.webp" alt="">
             </picture>
             <p class="hero-large">
@@ -76,6 +77,10 @@
 
             <p class="hero-small">
                 Small
+            </p>
+
+            <p class="hero-medium">
+                Medium                
             </p>
         </div>
 

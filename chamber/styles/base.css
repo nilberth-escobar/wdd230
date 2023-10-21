@@ -109,7 +109,7 @@ h2{
 	font-size: 2.5rem;
 
 }
-
+/* restore after lesson 6
 .hero-image{
 	position: relative;
 	height: 800px;
@@ -117,6 +117,42 @@ h2{
 	background: url("../images/hero-image.webp") no-repeat center;
 	background-size: cover;
 	}
+*/
+
+.hero-image{
+    max-width: 100%;
+    position: relative;
+}
+
+picture img{
+    width: 100%;
+}
+
+.hero-large {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border: 2px solid gray;
+    padding: 0.5rem;
+    box-shadow: 0 0 5px;
+    
+}
+
+.hero-large {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 5rem;
+	color: white;
+}
+
+.hero-small{
+	display: none;
+}
+
+.hero-medium{
+	display: none;
+}
 
 .container {
 	position: relative;
