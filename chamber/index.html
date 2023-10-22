@@ -10,7 +10,7 @@
     <meta name="description" content="place where people check outdoor activities, weather. They can join the Chamber of Commerce" />
     <meta name="author" content="Nilberth Escobar" />
     <title>Life Excursions Chamber of Commerce</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.webp" type="image/x-icon">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -56,9 +56,9 @@
         
         <!--THIS WILL BE A OFICIAL CODE AFTER LESSON 6-->
         <!-- <div class="hero-image">
-            <!-- Hero image section -->
+            <!- Hero image section -->
            <!-- <div class="container">
-               <!-- hero image content here -->
+               <!- hero image content here -->
                <!-- <h1><span>San Marcos Chamber of Commerce</span></h1>
             </div>
         </div> --> 
@@ -100,7 +100,7 @@
           <!-- Add your current events content here -->
           <div class="current-events">
             
-                <div class="card" style="background-image: url('./images/atvs.png');">
+                <div class="card" style="background-image: url('./images/atvs.webp');">
                   
                     <div class="text">
                         <h3>ATV Mayhem</h3>
@@ -108,14 +108,14 @@
                     </div>
                 </div>
 
-                <div class="card" style="background-image: url('./images/rappeling.jpeg');">
+                <div class="card" style="background-image: url('./images/rappeling.webp');">
                     <div class="text">
                         <h3>Rapelling Emotions</h3>
                         <p>Descend into the Unknown!</p>
                     </div>
                 </div>
 
-                <div class="card" style="background-image: url('./images/walks.jpeg')">
+                <div class="card" style="background-image: url('./images/walks.webp')">
                     
                     <div class="text">
                         <h3>Epic Wilderness Walks</h3>
@@ -123,7 +123,7 @@
                     </div>
                 </div>
 
-                <div class="card" style="background-image: url('./images/biking.jpg')">
+                <div class="card" style="background-image: url('./images/biking.webp')">
                  
                     <div class="text">
                         <h3>Biking Blitz</h3>
@@ -132,7 +132,7 @@
                     </div>
                 </div>
 
-                <div class="card" style="background-image: url('./images/camping.jpg');">
+                <div class="card" style="background-image: url('./images/camping.webp');">
                     
                     <div class="text">
                         <h3>Wilderness Camping</h3>
@@ -141,7 +141,7 @@
                     </div>
                 </div>
 
-                <div class="card" style="background-image: url('./images/flying_kite.jpg');">
+                <div class="card" style="background-image: url('./images/flying_kite.webp');">
                     
                     <div class="text">
                         <h3>High-Flyers' Haven</h3>
@@ -151,7 +151,7 @@
                 
             </div>
 
-            <div class="banner" style="background-image: url('./images/coming_soon.jpg')">
+            <div class="banner" style="background-image: url('./images/coming_soon.webp')">
                     
                 <div class="text">
                     <h3>Coming Soon</h3>
@@ -172,6 +172,19 @@
         <section class="weather">
           <!-- Add weather card content here -->
           <h4>Weather information</h4>
+
+          <div id="weather">
+            <label for="temperature">Temperature:</label>
+            <input type="number" id="temperature" name="temperature" min="0" max="50">
+            <br>
+            <label for="windSpeed">Wind Speed:</label>
+            <input type="number" id="windSpeed" name="windSpeed" min="0" max="50">
+            <br>
+            <button id="calculate" onclick="calculateWindChill()">Calculate </button>
+            <br>
+            <label for="windChill">Wind Chill:</label>
+            <span id="windChill"></span>
+          </div>
             
         </section>
     
@@ -191,6 +204,7 @@
     <script src="scripts/burger.js"></script>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/dark.js"></script>
+    <script src="scripts/windchill.js"></script>
 
 </body>
 </html>
