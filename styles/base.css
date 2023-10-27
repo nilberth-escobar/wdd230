@@ -142,6 +142,15 @@ ul li {
     margin-bottom: 10px;
 }
 
+.info-container p{
+    font-family: 'Arial', 'sans-serif';
+    font-size: 2rem;
+}
+
+.website-counter{
+    color: #FF4000;
+}
+
 footer {
     text-align: center;
     padding: 10px;
