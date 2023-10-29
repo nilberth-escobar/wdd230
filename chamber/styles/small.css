@@ -37,76 +37,56 @@
         left: 0;
     }
 
-    /*HERO SECTION WITH RESPONSIVE IMAGES*/
-    .hero-small{
-        display: block;
-    }
-
-    .hero-image{
-        max-width: 100%;
-        position: relative;
-    }
+    /*GALLERY SECTION*/
     
-    picture img{
-        width: 100%;
-    }
-
-    .hero-image .hero-small{
-        position: absolute;
-        top: 15px;
-        left: 15px;
-        border: 1px solid gray;
-        padding: 0.2rem;
-        box-shadow: 0 0 5px;
-        opacity: 0.75;
-    }
-    
-    .hero-small{
-        margin: 0;
-        padding: .15rem;
-        font-weight: 700;
-        font-size: 3rem;
-        color: black;
-    }
-
-    .hero-large{
-        display: none;
-    }
-
-    .hero-medium{
-        display: none;
-    }
-
-    /*EVENTS CONTAINER*/
-
-    .events-container {
-        grid-template-columns: 1fr; /* Set one column for small views */
-        gap: 10px; /* Adjust the gap as needed */
+    @media (max-width: 767px) {
+        .gallery {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      
+        .gallery-item {
+          width: 100%;
+          aspect-ratio: 1/1;
+          margin-bottom: 10px;
+        }
+      
+        .gallery-item img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 5px;
+        }
+      
+        .gallery-item img:hover {
+          transform: scale(1.05);
+        }
+      
+        .gallery-item:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          opacity: 0;
+          transition: opacity 0.3s ease;
+        }
+      
+        .gallery-item:hover:before {
+          opacity: 1;
+        }
+      
+        .gallery-item:before {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #fff;
+          font-size: 24px;
+        }
       }
-    
-      .current-events {
-        grid-template-columns: 1fr; /* Set one column for current events */
-      }
-    
-      .card {
-        width: 100%; /* Make each card take full width */
-    }
-     
-    .weather {
-        padding: 10px; 
-    }
-
-    .weather h4 {
-        font-size: 20px; 
-    }
-
-    
-    .company-spotlights {
-        padding: 10px; 
-    }
-
-    .company-spotlights h4 {
-        font-size: 20px; 
-    }
+      
              
 }

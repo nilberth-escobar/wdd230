@@ -87,7 +87,172 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h2 {
+  color: var(--accent1-color);
+}
 
+#mode {
+  background-color: black;
+}
+
+.current-container {
+  width: 100%;
+  background-color: var(--accent1-color);
+}
+
+.events-now {
+  color: var(--primary-color);
+  margin-top: 25px;
+  text-align: center;
+  font-size: 2.5rem;
+}
+/* restore after lesson 6
+.hero-image{
+	position: relative;
+	height: 800px;
+	overflow: hidden;
+	background: url("../images/hero-image.webp") no-repeat center;
+	background-size: cover;
+	}
+*/
+
+.hero-image {
+  max-width: 100%;
+  position: relative;
+}
+
+picture img {
+  width: 100%;
+}
+
+.hero-large {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border: 2px solid gray;
+  padding: 0.5rem;
+  box-shadow: 0 0 5px;
+}
+
+.hero-large {
+  margin: 0;
+  padding: 0.25rem;
+  font-weight: 700;
+  font-size: 5rem;
+  color: white;
+}
+
+.hero-small {
+  display: none;
+}
+
+.hero-medium {
+  display: none;
+}
+
+.container {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  color: var(--accent1-color);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: 800;
+  z-index: 1;
+}
+
+.events-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.current-events {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.card {
+  border-radius: 10px;
+  min-height: 200px;
+  font-weight: bold;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+}
+
+.card .text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text {
+  color: var(--accent1-color);
+}
+
+.banner {
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.banner ul {
+  list-style: none;
+}
+
+.banner ul li {
+  margin: 15px;
+  font-weight: bold;
+}
+
+.banner .boton {
+  background: #ffd600;
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+  border: none;
+  border-radius: 100px;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+.weather {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.weather h4 {
+  font-size: 24px;
+}
+
+.company-spotlights {
+  background-color: #555;
+  color: #fff;
+  padding: 20px;
+}
+
+.company-spotlights h4 {
+  font-size: 24px;
+}
 
 footer {
   text-align: center;
@@ -99,51 +264,48 @@ footer {
 /*MAIN SECTION*/
 
 .gallery {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 10px;
-	margin: 20px;
-  }
-  
-  .gallery-item {
-	position: relative;
-	overflow: hidden;
-	width: 100%; /* Added this */
-	aspect-ratio: 1/1; /* Added this to maintain aspect ratio */
-  }
-  
-  .gallery-item img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover; /* Added this to make sure the image covers the entire container */
-	border-radius: 5px;
-  }
-  
-  .gallery-item img:hover {
-	transform: scale(1.05);
-  }
-  
-  .gallery-item:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.5);
-	opacity: 0;
-	transition: opacity 0.3s ease;
-  }
-  
-  .gallery-item:hover:before {
-	opacity: 1;
-  }
-  
-  .gallery-item:before {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: #fff;
-	font-size: 24px;
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover:before {
+  opacity: 1;
+}
+
+.gallery-item:before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+}
