@@ -1,35 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-main {
-  display: grid;
-  grid-template-columns: 1fr 5fr; /* Adjust column proportions as needed */
-  border: red solid 5px;
-  height: 100vh;
-}
-
-.sidebar {
-  width: 100%;
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  height: 100%;
-  background-color: #f8f9fa; /* Adjust the background color as needed */
-  border-right: 1px solid #ccc; /* Add a border to separate sidebar from calendar */
-}
-
-.sidebar-section {
-  padding: 10px;
-  text-align: center;
-  border-bottom: 1px solid #ccc; /* Add a border to separate sections */
-  width: 100%;
-}
-
-.sidebar-section:last-child {
-  border-bottom: none; /* Remove border for the last section */
-}
 
 .calendar {
   width: 100%;
