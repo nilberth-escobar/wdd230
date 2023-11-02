@@ -8,4 +8,17 @@
         max-width: 300px;
         margin: 0 auto;
     }
+    
+    main {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: grid; /* Use CSS Grid */
+        gap: 20px; /* Add some space between grid items */
+        grid-template-columns: 1fr; /* Single column layout */
+        font-family: 'Roboto Condensand', 'Arial', sans-serif;
+    }
+    
 }
