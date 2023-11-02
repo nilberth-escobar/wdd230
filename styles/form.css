@@ -31,13 +31,6 @@ button {
   border-radius: var(--border-radius);
 }
 
-.submit {
-  padding: 1rem;
-  font-size: 20px;
-  width: 100%;
-  background-color: red;
-}
-
 label {
   padding-top: 1rem;
 }
@@ -70,6 +63,13 @@ input:nth-child(even) {
 input[type="submit"] {
   background-color: var(--primary-color);
   color: white;
+}
+
+.submitBtn {
+    padding: 1rem;
+    font-size: 20px;
+    width: 100%;
+    color: red;
 }
 
 input[type="reset"] {
