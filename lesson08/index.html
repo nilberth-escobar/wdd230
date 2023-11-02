@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Example</title>
+    <link rel="stylesheet" href="styles/base.css">
+  </head>
+  <body>
+    <header>
+      <!-- Header content here -->
+    </header>
+    <nav>
+      <!-- Navigation content here -->
+    </nav>
+    <main>
+      <form action="record.html" method="get">
+        <fieldset>
+          <legend>Sign Up Information</legend>
+          <label for="username">Username:</label>
+          <input class="info" type="text" id="username" name="username" required autofocus>
+          <label for="password">Password:</label>
+          <input class="info" type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}">
+          <label for="password-confirm">Confirm Password:</label>
+          <input class="info" type="password" id="password-confirm" name="password-confirm" required>
+          <label for="email">Email:</label>
+          <input class="info" type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$">
+          <label for="page-rating">Page Rating:</label>
+          <input class="info" type="range" id="page-rating" name="page-rating" min="1" max="10" step="1">
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <!-- Footer content here -->
+    </footer>
+    <script src="script.js"></script>
+
+  </body>
+</html>
