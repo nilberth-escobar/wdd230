@@ -1,83 +1,80 @@
 @media screen and (max-width: 550px) {
-    .open-menu,
-    .close-menu {
-        display: flex;
-        border: 0;
-        font-size: 2.25rem;
-        background-color: transparent;
-        cursor: pointer;
-    }
+  .open-menu,
+  .close-menu {
+    display: flex;
+    border: 0;
+    font-size: 2.25rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
 
-    .open-menu {
-        color: #1c1c1c;
-        
-    }
-    .open-menu{
-        display: flex;
-        margin: 20px auto 0px ;
-        color: #3943b7;
-    }
-
-    .close-menu {
-        color: #ececec;
-    }
-
-    .nav {
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #1c1c1c;
-        padding: 2rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-        z-index: 100;
-    }
-
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
-    }
+  .open-menu {
+    color: #1c1c1c;
+  }
+  .open-menu {
+    display: flex;
+    margin: 20px auto 0px;
+    color: #3943b7;
     
-    .nav-list {
-        flex-direction: column;
-        align-items: end;
-    }
+  }
 
-    .nav-list li a {
-        color: #ecececec;
-    }
+  .close-menu {
+    color: #ececec;
+  }
 
-    .hero-label{
-        position: absolute;
-        top: 15px;
-        left: 15px;
-        border: 1px solid gray;
-        padding: 0.2rem;
-        box-shadow: 0 0 5px;
-        opacity: 0.75;
-    }
-    
-    .hero-label p{
-        margin: 0;
-        padding: .15rem;
-        font-weight: 700;
-        font-size: 8px;
-        
-    }
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1c1c1c;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    z-index: 100;
+  }
 
-    .google-map{
-        width: 100%;
-    }
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
 
-   .map-responsive{
-        max-width: 800px;
-        
-   }
-        
+  .nav-list {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .nav-list li a {
+    color: #ecececec;
+  }
+
+  .hero-label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border: 1px solid gray;
+    padding: 0.2rem;
+    box-shadow: 0 0 5px;
+    opacity: 0.75;
+  }
+
+  .hero-label p {
+    margin: 0;
+    padding: 0.15rem;
+    font-weight: 700;
+    font-size: 8px;
+  }
+
+  .google-map {
+    width: 100%;
+  }
+
+  .map-responsive {
+    max-width: 800px;
+  }
 }
