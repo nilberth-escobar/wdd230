@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 :root {
-  --font-family: Arial, sans-serif;
+  --font-family: "Roboto", Arial, sans-serif;
+  --form-font: "Condensed", Arial, san-serif;
   --font-size: 16px;
   --line-height: 1.5;
   --primary-color: blue;
@@ -20,6 +22,7 @@ body {
 form {
   margin: 0 auto;
   padding: 20px;
+  font-family: var(--form-font);
 }
 
 label,
