@@ -122,6 +122,11 @@ main {
   /* Adjust height as needed */
 }
 
+#messageSection{
+  font-family: "Sofia Sans", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
 /* Discovery page */
 .gallery {
   display: grid;
