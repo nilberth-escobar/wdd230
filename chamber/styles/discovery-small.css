@@ -1,75 +1,106 @@
-@media screen and (max-width: 576px) {
-    .hamburger {
-      display: block;
-    }
-  
-    .hamburger.active .bar:nth-child(2) {
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 2;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .hero-large {
+    display: none;
+  }
+
+  .hero-small {
+    display: block;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    position: relative;
+  }
+
+  picture img {
+    width: 100%;
+  }
+
+  .hero-small {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border: 2px solid gray;
+    padding: 0.5rem;
+    box-shadow: 0 0 5px;
+  }
+
+  .hero-small {
+    margin: 0;
+    padding: 0.25rem;
+    font-weight: 700;
+    font-size: 5rem;
+    color: gray;
+  }
+
+  main {
+    grid-template-columns: 1fr; /* Change to a single column layout */
+  }
+
+  .gallery {
+    grid-template-columns: 1fr; /* Set gallery to a single column */
+  }
+
+  .gallery-item {
+    max-width: none; /* Remove max-width for gallery items */
+  }
+
+  img{
+    width: 100%;
+    background: #000;
+    animation: fade 15s;
+  }
+  @keyframes fade{
+    0%{
       opacity: 0;
     }
-  
-    .hamburger.active .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
+
+    100%{
+      opacity: 1;
     }
-  
-    .hamburger.active .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
-    }
-  
-    .nav-menu {
-      position: fixed;
-      left: -100%;
-      top: 70px;
-      gap: 0;
-      flex-direction: column;
-      background-color: #262626;
-      width: 100%;
-      text-align: center;
-      transition: 0.3s;
-      z-index: 2;
-    }
-  
-    .nav-item {
-      margin: 16px 0;
-    }
-  
-    .nav-menu.active {
-      left: 0;
-    }
-  
-    .hero-large {
-      display: none;
-    }
-  
-    .hero-small {
-      display: block;
-    }
-  
-    .hero-image {
-      max-width: 100%;
-      position: relative;
-    }
-  
-    picture img {
-      width: 100%;
-    }
-  
-    .hero-small {
-      position: absolute;
-      top: 30px;
-      left: 30px;
-      border: 2px solid gray;
-      padding: 0.5rem;
-      box-shadow: 0 0 5px;
-    }
-  
-    .hero-small {
-      margin: 0;
-      padding: 0.25rem;
-      font-weight: 700;
-      font-size: 5rem;
-      color: gray;
-    }
-  
-    /*GALLERY SECTION*/
   }
+
+  /*GALLERY SECTION*/
+
+  /* Your existing code... */
+
+  /* Add this media query for small screens */
   
+}

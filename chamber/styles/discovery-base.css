@@ -139,23 +139,23 @@ main {
 }
 
 .gallery-item {
-  border: red solid 2px;
+  
   max-width: 400px;
 }
 
-/* Styles for larger views */
-@media screen and (max-width: 768px) {
-  .gallery {
-    grid-template-columns: 1fr;
-  }
+.gallery-item img {
+  transition: transform 0.3s, box-shadow 0.3s; /* Add transition for smooth effect */
 }
 
-/* Hover effect for larger views when hovering over Discover */
-@media screen and (min-width: 769px) {
-  .nav-link:hover ~ .gallery .gallery-image {
-    transform: scale(1.05);
-    cursor: pointer;
-  }
+.gallery-item img:hover {
+  transform: scale(1.03); /* Apply a zoom effect on hover */
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.3); /* Add shadow effect on hover */
+}
+
+p{
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 2rem;
 }
 
 footer {
