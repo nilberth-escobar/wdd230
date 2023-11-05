@@ -1,0 +1,27 @@
+@media (max-width: 1200px) {
+    /* Medium View */
+    
+    .membership-benefits {
+      max-width: 100%; /* Full width on medium view */
+    }
+
+    .form-container {
+        max-width: 550px;
+        margin: 0 auto;
+    }
+  
+    .membership-benefits {
+      position: relative; /* Remove absolute positioning */
+      top: 0;
+      right: 0;
+      width: 100%;
+      margin-top: 20px; /* Add some space between form and benefits */
+      box-shadow: none; /* Remove shadow */
+      height: 175%;
+    }
+  
+    .membership-benefits h2 {
+      text-align: center;
+      margin: 10px 0;
+    }
+  }

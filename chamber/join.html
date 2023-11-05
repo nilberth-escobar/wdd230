@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Join Form</title>
+    <link rel="stylesheet" href="styles/join-base.css">
+    <link rel="stylesheet" href="styles/join-medium.css">
+    <link rel="stylesheet" href="styles/join-small.css">
+</head>
+
+<header>
+    <div class="container-navbar"> 
+        <nav class="navbar">
+          <a href="#" class="nav-branding">Life Excursions</a>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Discover</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Directory</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Join</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <div id="mode">
+                    🕶️
+                    </div>
+                </a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+     </div>
+</header>
+
+<body>
+    <main>
+        <div class="form-container">
+            <form action="thankyou.html" method="get">
+                <fieldset>
+                    <legend>Join the Chamber of Commerce</legend>
+
+                    <label for="first_name">Applicant's First Name<span class="required">*</span></label>
+                    <input type="text" id="first_name" name="first_name" required autofocus>
+
+                    <label for="last_name">Applicant's Last Name<span class="required">*</span></label>
+                    <input type="text" id="last_name" name="last_name" required>
+
+                    <label for="position">Applicant's Title or Position<span class="required">*</span></label>
+                    <input type="text" id="position" name="position" pattern="[A-Za-z -]{7,}" required>
+
+                    <label for="email">Email Address<span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+
+                    <label for="phone">Mobile Phone Number<span class="required">*</span></label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="organization">Business/Organization's Name<span class="required">*</span></label>
+                    <input type="text" id="organization" name="organization" required>
+
+                    <label for="membership_level">Membership Level<span class="required">*</span></label>
+                    <select id="membership_level" name="membership_level" required>
+                        <option value="np">Non Profit (No Fee)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+
+                    <label for="description">Business/Organization's Description</label>
+                    <textarea id="description" name="description"></textarea>
+
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+
+                    <button type="submit" class="submit">Submit</button>
+
+                </fieldset>
+            </form>
+
+        </div>
+
+        <div class="membership-benefits">
+            <h2 class="glow">Membership Benefits</h2>
+            <div class="membership-list">
+                <ul>
+                    <div class="no-fee"><p>Non Profit (No Fee):</p></div>
+                    <li>Access to networking events and seminars.
+                    </li>
+                    <li>Inclusion in the Chamber's online directory.
+                    </li>
+                    <li>Opportunity to participate in community service projects.
+                    </li>
+                    
+
+                    <div class="bronze"><p>Bronze Membership:</p></div>
+                    
+                    <li>Featured listing in the online directory.
+                    </li>
+                    <li>Access to exclusive workshops and business development programs.
+                    </li>
+                    <li>Opportunity to host or sponsor Chamber events.
+                    </li>
+
+                    <div class="silver"><p>Silver Membership:</p></div>
+                    
+                    <li>Priority access to Chamber events and programs.
+                    </li>
+                    <li>Access to additional marketing and advertising opportunities.
+                    </li>
+                    <li>Invitation to participate in special committees and task forces.
+                    </li>
+
+                    <div class="gold"><p>Gold Membership:</p></div>
+                   
+                    <li>Premier placement in the online directory.
+                    </li>
+                    <li>Exclusive access to high-level networking events and VIP receptions.
+                    </li>
+                    <li>Personalized business support and advocacy services.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&#169; <span id="currentYear"></span> Nilberth Escobar</p>
+        <p>BYU-I WDD230 | Chamber of Commerce Project</p>
+        <p id="lastModified">Last modification</p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/burger.js"></script>
+    
+</body>
+
+</html>
