@@ -125,6 +125,7 @@ main {
 #messageSection{
   font-family: "Sofia Sans", Arial, Helvetica, sans-serif;
   font-size: 2rem;
+  color: var(--accent1-color);
 }
 
 /* Discovery page */
