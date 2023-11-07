@@ -1,0 +1,147 @@
+{
+    "lessons": [
+        {
+            "lesson": "02",
+            "links" : [
+                {
+                    "url": "https://nilberth-escobar.github.io/wdd230/lesson2/design-principles.html",
+                    "title": "Design Principles"
+                }                
+            ]
+        },
+
+        {
+            "lesson": "03",
+            "links" : [
+                {
+                    "url": "https://codepen.io/Nilberth-Escobar/pen/ZEVRXLo",
+                    "title": "Pseudo Elements: CodePen Exercise"
+                },
+                {
+                    "url": "https://nilberth-escobar.github.io/wdd230/lesson03/chamber-site-plan.html",
+                    "title": "Chamber Of Commerce Site Plan"
+                }
+            ]
+        },
+
+        {
+            "lesson": "04",
+            "links" : [
+                {
+                    "url": "blank",
+                    "title": "blank"
+                }
+            ]
+        },
+
+        {
+            "lesson": "05",
+            "links" : [
+                {
+                    "url": "https://nilberth-escobar.github.io/wdd230/lesson05/bom.html",
+                    "title": "Book of Mormon App"
+                }
+            ]
+        },
+
+        {
+            "lesson": "06",
+            "links" : [
+                {
+                    "url": "https://nilberth-escobar.github.io/wdd230/responsive-images/responsive-images.html",
+                    "title": "Responsive Images"
+                }
+            ]
+        },
+
+        {
+            "lesson": "07",
+            "links" : [
+                {
+                    "url": "https://nilberth-escobar.github.io/wdd230/chamber/discover.html",
+                    "title": "Discover Home Page"
+                }
+            ]
+        },
+
+        {
+            "lesson": "08",
+            "links" : [
+                {
+                    "url": "https://nilberth-escobar.github.io/wdd230/form.html",
+                    "title": "User Information Form"
+                }
+            ]
+        },
+
+        {
+            "lesson": "08",
+            "links" : [
+                {
+                    "url": "https://nilberth-escobar.github.io/wdd230/chamber/join.html",
+                    "title": "Join Chamber Form"
+                }
+            ]
+        },
+
+        {
+            "lesson": "09",
+            "links" : [
+                {
+                    "url": "https://nilberth-escobar.github.io/wdd230/chamber/join.html",
+                    "title": "Letter Day Prophets Page"
+                }
+            ]
+        },
+
+        {
+            "lesson": "09",
+            "links" : [
+                {
+                    "url": "https://nilberth-escobar.github.io/wdd230/chamber/directory.html",
+                    "title": "JSON data-driven menu"
+                }
+            ]
+        },
+
+        {
+            "lesson": "09",
+            "links" :[
+                {
+                    "url" :"blank",
+                    "title" : "The Business Directory Page"
+                }
+            ]
+        },
+
+        {
+            "lesson" : "10",
+            "links"  : [
+                {
+                    "url" : "blank",
+                    "title" : "Weather API Information"
+                }
+            ]
+        },
+
+        {
+            "lesson" : "10",
+            "links" : [
+                {
+                    "url" : "blank",
+                    "title" : "Weather API Activity"
+                }
+            ]
+        },
+
+        {
+            "lesson" : "10",
+            "links" : [
+                {
+                    "url" : "blank",
+                    "title" : "Chamber Home Page Enhancement"
+                }
+            ]
+        }
+    ]
+}
