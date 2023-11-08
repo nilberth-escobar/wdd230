@@ -96,7 +96,7 @@ main {
     font-family: 'Roboto Condensand', 'Arial', sans-serif;
 }
 
-.card {
+.card, #links-container {
     padding: 20px;
     border: 1px solid #cccccc;
     border-radius: 5px;
@@ -104,7 +104,7 @@ main {
 }
 
 /* Style course links list */
-.card ul {
+.card ul, #links-container {
     list-style-type: none;
     padding: 0;
 }

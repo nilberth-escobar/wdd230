@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nilberth Escobar - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development. Nilberth Escobar's course assignment portal where I post the class' assignments .">
+    <meta name="author" content="Nilberth Escobar">
+    <meta property="og:title" content="Nilberth Escobar's WDD230 Home Page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://github.com/nilberth-escobar/wdd230/blob/main/images/hero-large.webp" />
+    <meta property="og:url" content="https://nilberth-escobar.github.io/wdd230/" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- CSS link here -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+</head>
+
+<body>
+    <header>
+        
+        <img src="images/profile.jpg" alt="Your Profile Image">
+        
+        <h1>Nilberth Escobar</h1>
+    </header>
+
+    <button id="open" class="open-menu"> <i class="bi bi-list"></i> </button>
+    <nav class="nav" id="nav">
+        
+        <button class="close-menu" id="close"> <i class="bi bi-x-square"></i> </button>
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="chamber/siteplan.html">Site Plan</a></li>
+            <li><a href="chamber/">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
+                   
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="hero-image">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 400px )" >
+                
+                <img src="images/hero-large.webp" alt="">
+            </picture>
+
+            <div class="hero-label">
+                <p>
+                    Calgary Alberta Temple
+                </p>
+            </div>
+
+        </div>
+       
+        <h2>WDD 230: Web Frontend Development</h2>
+
+        <section class="card" id="links-container">
+            <h3>Learning Activities</h3>
+            <!-- Dynamic links will be added here -->
+        </section>
+        
+
+        <section class="card">
+            <h3>Information</h3>
+            <!-- Weather, visits, etc. -->
+            <div class="info-container">
+               
+                <div class="bg"><p>Website visit count: <span class="website-counter"></span></p></div>
+            </div>
+        </section>
+    </main>
+
+    <div class="map-responsive">
+        <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15419.550172511224!2d-91.82209135000001!3d14.943357400000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sgt!4v1696043575985!5m2!1sen!2sgt" width="400" height="450" allowfullscreen></iframe>
+    </div>
+
+    <footer>
+        <p>&#169; <span id="currentYear"></span> Nilberth Escobar Guatemala</p>
+        <p id="lastModified">Last modification</p>
+    </footer>
+
+    <!-- Add your JavaScript file reference -->
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/burger.js"></script>
+    <script src="scripts/getvisits.js"></script>
+    <script src="scripts/links.js"></script>
+</body>
+
+</html>
