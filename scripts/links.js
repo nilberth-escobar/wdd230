@@ -1,40 +1,36 @@
-const baseURL = "https://github.com/nilberth-escobar/wdd230";
-
-const linksURL = "https://github.com/nilberth-escobar/wdd230/data/links.json";
+const baseURL = "https://nilberth-escobar.github.io/wdd230/";
+const linksURL = "https://nilberth-escobar.github.io/wdd230/data/links.json";
+const cards = document.querySelector('.card')
 
 async function getLinks() {
-    const response = await fetch(linksURL);
-    const data = await response.json();
-    //console.log(data);
-    displayLinks(data)
+  const response = await fetch(linksURL);
+  const data = await response.json();
+  displayLinks(data.lessons);
 }
-function displayLinks(lessons){
-  const linksContainer = document.getElementById("#links-container");
-  weeks.forEach(week => {
-  const weekElement = document.createElement("div");
-  weekElement.classList.add("week");
 
-  const weekTitle = document.createElement("h2");
-  weekTitle.textContent = 'Week ${week.week}';
+const displayLinks = (lessons) => {
+  const h3 = document.createElement('h3')
+  h3.textContent = 'Learning Activities';
 
-  const linksList = document.createElement("ul");
+  const ul = document.createElement('ul');
 
-  week.links.forEach(link => {
+  lessons.forEach((weeks) => {
+    const li = document.createElement('li');
 
-    const linkItem = document.createElement("li");
-    const linkAnchor = document.createElement("a");
-    linkAnchor.href = '${baseURL}/${link.url}';
-    linkAnchor.textContent = link.title;
-    linkItem.appendChild(linkAnchor);
-    linksList.appendChild(linkItem);
-  });
+    li.textContent = `Lesson ${weeks.lesson}: `;
+    
+    const a = document.createElement('a');
+    a.href = weeks.links[0].url;
+    a.textContent = weeks.links[0].title;
 
-  weekElement.appendChild(weekTitle);
-  weekElement.appendChild(linksList);
-  weekElement.appendChild(weekElement);
+    li.appendChild(a);
+    ul.appendChild(li);
 
   });
 
+  cards.appendChild(h3);
+  cards.appendChild(ul);
+
 }
+
 getLinks();
-
