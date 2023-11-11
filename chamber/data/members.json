@@ -1,0 +1,94 @@
+{
+    "businesses": [
+      {
+        "name": "ABC Company",
+        "address": "123 Main St, Anytown USA",
+        "phone": "555-1234",
+        "website": "www.abccompany.com",
+        "image": "abc.jpg",
+        "membership_level": "Gold",
+        "other_info": "Founded in 1990"
+      },
+      {
+        "name": "XYZ Corporation",
+        "address": "456 Oak St, Anytown USA",
+        "phone": "555-5678",
+        "website": "www.xyzcorp.com",
+        "image": "xyz.png",
+        "membership_level": "Silver",
+        "other_info": "Family-owned since 1950"
+      },
+      {
+        "name": "123 LLC",
+        "address": "789 Elm St, Anytown USA",
+        "phone": "555-9012",
+        "website": "www.123llc.com",
+        "image": "123.jpg",
+        "membership_level": "Bronze",
+        "other_info": "Specializes in eco-friendly products"
+      },
+      {
+        "name": "Acme Inc.",
+        "address": "246 Maple St, Anytown USA",
+        "phone": "555-3456",
+        "website": "www.acmeinc.com",
+        "image": "acme.jpg",
+        "membership_level": "Gold",
+        "other_info": "Award-winning customer service"
+      },
+      {
+        "name": "Smith & Sons",
+        "address": "369 Pine St, Anytown USA",
+        "phone": "555-7890",
+        "website": "www.smithandsons.com",
+        "image": "smith.jpg",
+        "membership_level": "Silver",
+        "other_info": "In business since 1985"
+      },
+      {
+        "name": "Jones Enterprises",
+        "address": "258 Cedar St, Anytown USA",
+        "phone": "555-2345",
+        "website": "www.jonesent.com",
+        "image": "jones.png",
+        "membership_level": "Bronze",
+        "other_info": "Offers free consultations"
+      },
+      {
+        "name": "Green Solutions",
+        "address": "147 Birch St, Anytown USA",
+        "phone": "555-6789",
+        "website": "www.greensolutions.com",
+        "image": "green.jpg",
+        "membership_level": "Gold",
+        "other_info": "Certified organic products"
+      },
+      {
+        "name": "Blue Sky Co.",
+        "address": "369 Oak St, Anytown USA",
+        "phone": "555-1234",
+        "website": "www.blueskyco.com",
+        "image": "blue.jpg",
+        "membership_level": "Silver",
+        "other_info": "Family-owned since 1970"
+      },
+      {
+        "name": "Red Rock Industries",
+        "address": "258 Maple St, Anytown USA",
+        "phone": "555-5678",
+        "website": "www.redrockind.com",
+        "image": "red.jpg",
+        "membership_level": "Bronze",
+        "other_info": "Specializes in custom orders"
+      },
+      {
+        "name": "Purple People Eaters",
+        "address": "147 Pine St, Anytown USA",
+        "phone": "555-9012",
+        "website": "www.purplepeople.com",
+        "image": "purple.jpg",
+        "membership_level": "Gold",
+        "other_info": "Offers free shipping on orders over $50"
+      }
+    ]
+  }
