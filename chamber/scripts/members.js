@@ -13,7 +13,7 @@ async function getBusinesses() {
     let p1 = document.createElement('p');
     let p2 = document.createElement('p');
     let a = document.createElement('a');
-  
+      
     iconImg.setAttribute('src', business.imageurl);
     iconImg.setAttribute('alt', `Icon image for ${business.name}`);
     iconImg.setAttribute('loading', 'lazy');
@@ -23,7 +23,7 @@ async function getBusinesses() {
     p1.innerHTML = business.address + "<br>" + business.phone;
   
     p2.textContent = business.membership_level;
-  
+
     a.textContent = business.website;
     a.setAttribute('href', '#');
   
@@ -32,6 +32,7 @@ async function getBusinesses() {
     card.appendChild(p1);
     card.appendChild(p2);
     card.appendChild(a);
+    
   
     document.querySelector('.directory-grid').appendChild(card);
   }
