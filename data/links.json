@@ -15,11 +15,17 @@
             "links" : [
                 {
                     "url": "https://codepen.io/Nilberth-Escobar/pen/ZEVRXLo",
-                    "title": "Pseudo Elements: CodePen Exercise"
-                },
+                    "title": "Pseudo Elements CodePen Exercise"
+                }
+            ]
+        },
+
+        {
+            "lesson": "03",
+            "links" : [
                 {
-                    "url": "https://nilberth-escobar.github.io/wdd230/lesson03/chamber-site-plan.html",
-                    "title": "Chamber Of Commerce Site Plan"
+                    "url": "https://nilberth-escobar.github.io/wdd230/chamber/index.html",
+                    "title": "Chamber of Commerce Project"
                 }
             ]
         },
@@ -98,7 +104,7 @@
             "lesson": "09",
             "links" : [
                 {
-                    "url": "https://nilberth-escobar.github.io/wdd230/chamber/directory.html",
+                    "url": "https://nilberth-escobar.github.io/wdd230/",
                     "title": "JSON data-driven menu"
                 }
             ]
@@ -108,7 +114,7 @@
             "lesson": "09",
             "links" :[
                 {
-                    "url" :"blank",
+                    "url" :"https://nilberth-escobar.github.io/wdd230/chamber/directory.html",
                     "title" : "The Business Directory Page"
                 }
             ]
