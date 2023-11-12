@@ -1,123 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="Life Excursions Chamber of Commerce" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://github.com/nilberth-escobar/wdd230/favicon-wdd230.png" />
-    <meta property="og:url" content="https://nilberth-escobar.github.io/wdd230/chamber/index.html" />
-    <meta name="description" content="place where people check outdoor activities, weather. They can join the Chamber of Commerce" />
+    <meta
+      property="og:image"
+      content="https://github.com/nilberth-escobar/wdd230/favicon-wdd230.png"
+    />
+    <meta
+      property="og:url"
+      content="https://nilberth-escobar.github.io/wdd230/chamber/index.html"
+    />
+    <meta
+      name="description"
+      content="place where people check outdoor activities, weather. They can join the Chamber of Commerce"
+    />
     <meta name="author" content="Nilberth Escobar" />
     <title>Life Excursions Chamber of Commerce</title>
-    <link rel="icon" href="images/favicon.webp" type="image/x-icon">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/chamber-base.css">
-    <link rel="stylesheet" href="styles/chamber-medium.css">
-    <link rel="stylesheet" href="styles/chamber-small.css">
-    <link rel="stylesheet" href="styles/directory.css">
-</head>
-<body>
-        
+    <link rel="icon" href="images/favicon.webp" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/chamber-base.css" />
+    <link rel="stylesheet" href="styles/chamber-medium.css" />
+    <link rel="stylesheet" href="styles/chamber-small.css" />
+    <link rel="stylesheet" href="styles/directory-small.css" />
+    <link rel="stylesheet" href="styles/directory-medium.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
+  </head>
+  <body>
     <header>
-        <div class="container-navbar"> 
-            <nav class="navbar">
-              <a href="#" class="nav-branding">Life Excursions</a>
-              <ul class="nav-menu">
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a href="discover.html" class="nav-link">Discover</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Directory</a>
-                </li>
-                <li class="nav-item">
-                    <a href="join.html" class="nav-link">Join</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <div id="mode">
-                        🕶️
-                        </div>
-                    </a>
-                </li>
-              </ul>
-              <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-              </div>
-            </nav>
-         </div>
+      <div class="container-navbar">
+        <nav class="navbar">
+          <a href="#" class="nav-branding">Life Excursions</a>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="discover.html" class="nav-link">Discover</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Directory</a>
+            </li>
+            <li class="nav-item">
+              <a href="join.html" class="nav-link">Join</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <div id="mode">🕶️</div>
+              </a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
     </header>
-        
-    <main>
-        <h1>Directory</h1>
-        
-        <div class="directory">
 
-            <div class="content-container">
-                
-                <div class="directory-buttons">
-                  <button id="panel" value="Panel View">GRID<br>View</button>
-                  <button id="list" value="List View" autofocus>LIST<br>View</button>
-                </div>
-                <div class="directory-grid">
-                  <div class="toggle-view">
-                    <span class="list l-active">List view</span>
-                    <span class="grid">Grid view</span>
-                  </div>
-                  
-                  <div class="grid-container">
-                    <div class="grid-item">Item 1</div>
-                    <div class="grid-item">Item 2</div>
-                    <div class="grid-item">Item 3</div>
-                    <div class="grid-item">Item 4</div>
-                    <div class="grid-item">Item 5</div>
-                    <div class="grid-item">Item 6</div>
-                    <div class="grid-item">Item 7</div>
-                    <div class="grid-item">Item 8</div>
-                    <div class="grid-item">Item 9</div>
-                    <div class="grid-item">Item 10</div>
-                   
-                  </div>
-                  
-                  <div class="list-container">
-                    <ul>
-                      <li>Item 1</li>
-                      <li>Item 2</li>
-                      <li>Item 3</li>
-                      <li>Item 4</li>
-                      <li>Item 5</li>
-                      <li>Item 6</li>
-                      <li>Item 7</li>
-                      <li>Item 8</li>
-                      <li>Item 9</li>
-                      <li>Item 10</li>
-                      
-                    </ul> 
-                    
-                  </div>
-                </div>
-              </div>
+    <main class="directory">
+      <div class="content-container">
+        <h1>Directory</h1>
+        <div class="directory-buttons">
+          <button id="panel" value="Panel View">GRID<br />View</button>
+          <button id="list" value="List View" autofocus>LIST<br />View</button>
         </div>
-        
-        
+        <div class="directory-grid"></div>
+      </div>
     </main>
-    
+
     <footer>
-        <p>&#169; <span id="currentYear"></span> Nilberth Escobar</p>
-        <p>BYU-I WDD230 | Chamber of Commerce Project</p>
-        <p id="lastModified">Last modification</p>
+      <p>&#169; <span id="currentYear"></span> Nilberth Escobar</p>
+      <p>BYU-I WDD230 | Chamber of Commerce Project</p>
+      <p id="lastModified">Last modification</p>
     </footer>
-    
+
     <script src="scripts/burger.js"></script>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/dark.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/directory.js"></script>
-
-</body>
+    <script src="scripts/members.js"></script>
+  </body>
 </html>

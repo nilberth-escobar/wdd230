@@ -12,7 +12,7 @@ gridToggle.addEventListener('click', function() {
 
 listToggle.addEventListener('click', function() {
   gridContainer.style.display = 'none';
-  listContainer.style.display = 'block';
+  listContainer.style.display = 'flex';
   gridToggle.classList.remove('l-active');
   listToggle.classList.add('l-active');
 });

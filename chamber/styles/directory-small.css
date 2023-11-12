@@ -1,0 +1,108 @@
+/*directory page*/
+
+.directory {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+.content-container {
+  padding: 0 2%;
+}
+
+.directory-buttons {
+  text-align: end;
+}
+
+.directory-buttons button {
+  background-color: #283618;
+  margin: -30px 15px 20px 15px;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  border: 2px #777777 solid;
+}
+
+.directory-buttons button:focus {
+  background-color: rgba(221, 161, 94, 0.7);
+  font-weight: bold;
+  color: #000;
+  border: 2px #bc6c25 solid;
+}
+
+#panel {
+  background-size: 50px 50px;
+  height: 52px;
+  width: 52px;
+}
+#list {
+  background-size: 50px 50px;
+  height: 52px;
+  width: 52px;
+}
+
+.directory-grid {
+  color: black;
+  margin-bottom: 25px;
+}
+
+.directory-grid section h2 {
+  text-align: center;
+}
+
+.directory-grid section {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 2fr 1fr;
+  padding: 20px;
+  margin: 12px;
+  background-color: rgba(221, 161, 94, 0.7);
+  border: 2px #bc6c25 solid;
+  border-radius: 3px;
+}
+
+.directory-grid img {
+  display: none;
+}
+
+.directory-grid section p {
+  text-align: center;
+  font-size: 16px;
+}
+
+.directory-grid section a {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.directory-grid section a:hover {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+}
+
+.panelview {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.panelview section {
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  display: block;
+  border: 2px #bc6c25 solid;
+  border-radius: 3px;
+}
+
+.panelview img {
+  padding: 0px;
+  display: block;
+  margin: 15px auto;
+  width: 100px;
+  box-shadow: 5px 5px 10px #000000;
+  border-radius: 5px;
+}
