@@ -1,0 +1,59 @@
+main section {
+    background-color: lightcyan;
+    margin: .5rem;
+    padding: 1rem;
+    box-shadow: 1px 1px 5px 1px black;
+}
+
+body {
+    text-align: center;
+}
+
+main section img {
+    box-shadow: 3px 3px 10px 3px black;
+}
+
+main div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    padding: .5rem;
+    box-shadow: 3px 3px 10px 3px black;
+}
+
+/* New styles for the elements created in the JavaScript code */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 1px 1px 5px 1px black;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+section img {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    box-shadow: 3px 3px 10px 3px black;
+}
+
+section p {
+    margin: 0.5rem 0;
+}
+
+footer{
+    text-align: center;
+    padding: 1rem;
+    background-color: lightcyan;
+    margin: .5rem;
+    padding: 1rem;
+    box-shadow: 1px 1px 5px 1px black;
+    font-size: 1.5rem;
+}
