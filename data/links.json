@@ -124,8 +124,8 @@
             "lesson" : "10",
             "links"  : [
                 {
-                    "url" : "blank",
-                    "title" : "Weather API Information | Under Construction"
+                    "url" : "https://nilberth-escobar.github.io/wdd230/lesson10/weather.html",
+                    "title" : "Weather API Activity | Trier, Germany"
                 }
             ]
         },
@@ -134,8 +134,8 @@
             "lesson" : "10",
             "links" : [
                 {
-                    "url" : "blank",
-                    "title" : "Weather API Activity | Under Construction"
+                    "url" : "https://nilberth-escobar.github.io/wdd230/",
+                    "title" : "Weather API Information | Learning Activities Home Page"
                 }
             ]
         },
