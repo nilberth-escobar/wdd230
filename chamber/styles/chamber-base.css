@@ -266,12 +266,12 @@ footer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   margin: 1rem auto;
-  border: 1px solid #110f0f;
+  border: 1px solid #fff;
 }
 
 .forecast-item{
 text-align: center;
-border-right: 1px solid #110f0f;
+border-right: 1px solid #fff;
 font-family: 'Sofia Sans', sans-serif;	
 }
 
@@ -295,10 +295,39 @@ background-color: var(--accent1-color);
 padding: 15px;
 font-size: 25px;
 font-family: "Sofia Sans", sans-serif;
+
 }
 
 .forecast-item p, span{
-font-size: 20px;
+font-size: 25px;
 font-family: "Sofia Sans", sans-serif;
 
+}
+
+.weather h3{
+  text-align: center;
+  font-family: "Sofia Sans";
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+/*CURRENT WEATHER IN THE HERO IMAGE*/
+.weatherCard{
+  position: relative;
+  max-width: 200px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+
+.weatherCard{
+  text-align: center;
+  background-color: #598392;
+}
+
+figcaption::first-letter{
+  text-transform: uppercase;
+}
+
+figcaption{
+  font-size: 1.4rem;
 }

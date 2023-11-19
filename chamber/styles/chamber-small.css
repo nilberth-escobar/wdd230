@@ -70,5 +70,44 @@
     color: gray;
   }
 
-  /*GALLERY SECTION*/
+  .events-container {
+    grid-template-columns: 1fr; /* Display in one column */
+    gap: 10px; /* Adjust the gap as needed */
+  }
+
+  .current-events {
+    grid-template-columns: 1fr; /* Display current events in one column */
+  }
+
+  .card {
+    width: 100%; /* Make each card take full width */
+  }
+
+  .weather {
+    padding: 10px; /* Adjust padding as needed */
+  }
+
+  .weather h3 {
+    font-size: 20px; /* Adjust font size as needed */
+  }
+
+  #forecast {
+    grid-template-columns: repeat(1, 1fr); /* Display forecast in one column */
+    gap: 10px; /* Adjust the gap as needed */
+  }
+
+  .forecast-item {
+    border-right: none; /* Remove right border for each forecast item */
+  }
+
+  .forecast-item h3 {
+    font-size: 18px; /* Adjust font size as needed */
+  }
+
+  .forecast-item p,
+  .forecast-item span {
+    font-size: 16px; /* Adjust font size as needed */
+  }
+
+  
 }
