@@ -106,7 +106,7 @@ h2 {
   text-align: center;
   font-size: 2.5rem;
 }
-/* restore after lesson 6
+
 .hero-image{
 	position: relative;
 	height: 800px;
@@ -114,7 +114,7 @@ h2 {
 	background: url("../images/hero-image.webp") no-repeat center;
 	background-size: cover;
 	}
-*/
+
 
 .hero-image {
   max-width: 100%;
@@ -261,5 +261,44 @@ footer {
   color: #fff;
 }
 
-/*MAIN SECTION*/
+/* FORECAST SECTION */
+#forecast{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 1rem auto;
+  border: 1px solid #110f0f;
+}
 
+.forecast-item{
+text-align: center;
+border-right: 1px solid #110f0f;
+font-family: 'Sofia Sans', sans-serif;	
+}
+
+.forecast-item p::first-letter{
+text-transform: capitalize;
+}
+
+.forecast-item h3, p, span{
+margin-top: 5px;
+
+}
+
+.forecast-item img{
+margin-top: 5px;
+max-width: 100%;
+
+}
+
+.forecast-item h3{
+background-color: var(--accent1-color);
+padding: 15px;
+font-size: 25px;
+font-family: "Sofia Sans", sans-serif;
+}
+
+.forecast-item p, span{
+font-size: 20px;
+font-family: "Sofia Sans", sans-serif;
+
+}

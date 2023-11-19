@@ -54,21 +54,21 @@
         
     <main>
         
-        <!--THIS WILL BE A OFICIAL CODE AFTER LESSON 6-->
-        <!-- <div class="hero-image">
-            <!- Hero image section -->
-           <!-- <div class="container">
-               <!- hero image content here -->
-               <!-- <h1><span>San Marcos Chamber of Commerce</span></h1>
+        
+        <div class="hero-image">
+            <!-- Hero image section -->
+            <div class="container">
+               
+               <h1><span>San Marcos Chamber of Commerce</span></h1>
             </div>
-        </div> --> 
+        </div>  
 
         <!-- THIS WAS JUST ADDED FOR LESSON 6: RESPONSIVE IMAGES-->
-        <div class="hero-image">
+        <!-- <div class="hero-image">
             <picture>
                 <source srcset="images/hero-small.webp" media="(max-width: 576px )" >
                 <source srcset="images/hero-medium.webp" media="(max-width: 768px )" >
-                <!-- <source srcset="images/hero-large.webp" media="(max-width: 1200px )" > -->
+                 <source srcset="images/hero-large.webp" media="(max-width: 1200px )" >
                 <img src="images/hero-large.webp" alt="">
             </picture>
             <p class="hero-large">
@@ -82,7 +82,7 @@
             <p class="hero-medium">
                 Medium                
             </p>
-        </div>
+        </div> -->
 
     
         <!-- Call to action section -->
@@ -170,21 +170,10 @@
     
         <!-- Weather card section -->
         <section class="weather">
-          <!-- Add weather card content here -->
-          <h4>Weather information</h4>
-
-          <div id="weather">
-            <label for="temperature">Temperature:</label>
-            <input type="number" id="temperature" name="temperature" min="0" max="50">
-            <br>
-            <label for="windSpeed">Wind Speed:</label>
-            <input type="number" id="windSpeed" name="windSpeed" min="0" max="50">
-            <br>
-            <button id="calculate" onclick="calculateWindChill()">Calculate </button>
-            <br>
-            <label id="wind">Wind Chill:</label>
-            <span id="windChill"></span>
-          </div>
+            <!-- Add weather card content here -->
+              
+            <h2>5-Day Weather Forecast</h1>
+            <div id="forecast"></div>
             
         </section>
     
@@ -205,6 +194,7 @@
     <script src="scripts/getdates.js"></script>
     <script src="scripts/dark.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/forecast.js"></script>
 
 </body>
 </html>
