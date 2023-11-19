@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const today = new Date();
     const dayOfWeek = today.getDay();
 
-    if (dayOfWeek >= 2 && dayOfWeek <= 6) {
+    if (dayOfWeek >= 1 && dayOfWeek <= 3) {
         bannerContainer.style.display = "block";
     }
 
@@ -16,8 +16,3 @@ document.addEventListener("DOMContentLoaded", function() {
         bannerContainer.style.display = "none";
     });
 });
-
-
-1
-
-3
