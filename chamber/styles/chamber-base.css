@@ -331,3 +331,31 @@ figcaption::first-letter{
 figcaption{
   font-size: 1.4rem;
 }
+
+/* Add this banner.css file to your existing stylesheets */
+
+.banner-container {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f26419;
+  color: white;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#closeBannerButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
