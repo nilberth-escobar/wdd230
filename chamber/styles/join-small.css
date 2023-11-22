@@ -1,5 +1,9 @@
-@media (max-width: 710px) {
+@media (max-width: 570px) {
     /* Small View */
+
+    main, .general{
+        width: 570px;
+    }
 
     .hamburger {
         display: block;
