@@ -5,7 +5,7 @@
         "address": "123 Main St, Anytown USA",
         "phone": "555-1234",
         "website": "https://wavin.com/es-gt",
-        "image": "https://nilberth-escobar.github.io/wdd230/chamber/images/amanco.png",
+        "image": "https://nilberth-escobar.github.io/wdd230/chamber/images/amanco.webp",
         "membership_level": "Gold",
         "other_info": "Founded in 1990"
       },
@@ -14,7 +14,7 @@
         "address": "456 Oak St, Anytown USA",
         "phone": "555-5678",
         "website": "www.xyzcorp.com",
-        "image": "https://nilberth-escobar.github.io/wdd230/chamber/images/aprofam.png",
+        "image": "https://nilberth-escobar.github.io/wdd230/chamber/images/aprofam.webp",
         "membership_level": "Silver",
         "other_info": "Family-owned since 1950"
       },
@@ -23,70 +23,70 @@
         "address": "789 Elm St, Anytown USA",
         "phone": "555-9012",
         "website": "www.123llc.com",
-        "image": "https://nilberth-escobar.github.io/wdd230/chamber/images/banco_promerica.jpg",
+        "image": "https://nilberth-escobar.github.io/wdd230/chamber/images/banco-promerica.webp",
         "membership_level": "Bronze",
         "other_info": "Specializes in eco-friendly products"
       },
       {
-        "name": "Acme Inc.",
+        "name": "Farmacia Batres",
         "address": "246 Maple St, Anytown USA",
         "phone": "555-3456",
         "website": "www.acmeinc.com",
-        "image": "acme.jpg",
+        "image": "https://nilberth-escobar.github.io/wdd230/chamber/images/batres.webp",
         "membership_level": "Gold",
         "other_info": "Award-winning customer service"
       },
       {
-        "name": "Smith & Sons",
+        "name": "Cemex",
         "address": "369 Pine St, Anytown USA",
         "phone": "555-7890",
         "website": "www.smithandsons.com",
-        "image": "smith.jpg",
+        "image": "https://nilberth-escobar.github.io/wdd230/chamber/images/cemex.webp",
         "membership_level": "Silver",
         "other_info": "In business since 1985"
       },
       {
-        "name": "Jones Enterprises",
+        "name": "Comex",
         "address": "258 Cedar St, Anytown USA",
         "phone": "555-2345",
         "website": "www.jonesent.com",
-        "image": "jones.png",
+        "image": "https://nilberth-escobar.github.io/wdd230/chamber/images/comex.webp",
         "membership_level": "Bronze",
         "other_info": "Offers free consultations"
       },
       {
-        "name": "Green Solutions",
+        "name": "Cotzic Restaurant",
         "address": "147 Birch St, Anytown USA",
         "phone": "555-6789",
         "website": "www.greensolutions.com",
-        "image": "green.jpg",
+        "image": "https://nilberth-escobar.github.io/wdd230/chamber/images/cotzic.webp",
         "membership_level": "Gold",
         "other_info": "Certified organic products"
       },
       {
-        "name": "Blue Sky Co.",
+        "name": "Marsa",
         "address": "369 Oak St, Anytown USA",
         "phone": "555-1234",
         "website": "www.blueskyco.com",
-        "image": "blue.jpg",
+        "image": "https://nilberth-escobar.github.io/wdd230/chamber/images/marsa.webp",
         "membership_level": "Silver",
         "other_info": "Family-owned since 1970"
       },
       {
-        "name": "Red Rock Industries",
+        "name": "Miralvalle Hotel&Restaurant",
         "address": "258 Maple St, Anytown USA",
         "phone": "555-5678",
         "website": "www.redrockind.com",
-        "image": "red.jpg",
+        "image": "https://nilberth-escobar.github.io/wdd230/chamber/images/miralvalle.webp",
         "membership_level": "Bronze",
         "other_info": "Specializes in custom orders"
       },
       {
-        "name": "Purple People Eaters",
+        "name": "Multiservicios Marquense",
         "address": "147 Pine St, Anytown USA",
         "phone": "555-9012",
         "website": "www.purplepeople.com",
-        "image": "purple.jpg",
+        "image": "https://nilberth-escobar.github.io/wdd230/chamber/images/multiservicios.webp",
         "membership_level": "Gold",
         "other_info": "Offers free shipping on orders over $50"
       }
