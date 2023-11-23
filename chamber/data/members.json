@@ -19,11 +19,11 @@
         "other_info": "Family-owned since 1950"
       },
       {
-        "name": "123 LLC",
+        "name": "Banco Promerica",
         "address": "789 Elm St, Anytown USA",
         "phone": "555-9012",
         "website": "www.123llc.com",
-        "image": "123.jpg",
+        "image": "https://nilberth-escobar.github.io/wdd230/chamber/images/banco_promerica.jpg",
         "membership_level": "Bronze",
         "other_info": "Specializes in eco-friendly products"
       },
