@@ -1,20 +1,20 @@
 {
     "businesses": [
       {
-        "name": "ABC Company",
+        "name": "Amanco",
         "address": "123 Main St, Anytown USA",
         "phone": "555-1234",
-        "website": "www.abccompany.com",
+        "website": "https://wavin.com/es-gt",
         "image": "https://nilberth-escobar.github.io/wdd230/chamber/images/amanco.png",
         "membership_level": "Gold",
         "other_info": "Founded in 1990"
       },
       {
-        "name": "XYZ Corporation",
+        "name": "Aprofam",
         "address": "456 Oak St, Anytown USA",
         "phone": "555-5678",
         "website": "www.xyzcorp.com",
-        "image": "xyz.png",
+        "image": "https://nilberth-escobar.github.io/wdd230/chamber/images/aprofam.png",
         "membership_level": "Silver",
         "other_info": "Family-owned since 1950"
       },

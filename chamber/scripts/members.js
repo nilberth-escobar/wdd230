@@ -14,7 +14,7 @@ async function getBusinesses() {
     let p2 = document.createElement('p');
     let a = document.createElement('a');
       
-    iconImg.setAttribute('src', business.imageurl);
+    iconImg.setAttribute('src', business.image);
     iconImg.setAttribute('alt', `Icon image for ${business.name}`);
     iconImg.setAttribute('loading', 'lazy');
   
