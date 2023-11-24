@@ -2,93 +2,83 @@
     "businesses": [
       {
         "name": "Amanco",
-        "address": "123 Main St, Anytown USA",
-        "phone": "555-1234",
+        "address": "Km. 36.7 Autopista Palín, Escuintla CA 9 Sur",
+        "phone": "7600-0100",
         "website": "https://wavin.com/es-gt",
         "image": "https://nilberth-escobar.github.io/wdd230/chamber/images/amanco.webp",
-        "membership_level": "Gold",
-        "other_info": "Founded in 1990"
+        "membership_level": "Gold"
       },
       {
         "name": "Aprofam",
-        "address": "456 Oak St, Anytown USA",
-        "phone": "555-5678",
-        "website": "www.xyzcorp.com",
+        "address": "5ta call 3-55 zone 4",
+        "phone": "1586",
+        "website": "https://www.aprofam.org.gt/",
         "image": "https://nilberth-escobar.github.io/wdd230/chamber/images/aprofam.webp",
-        "membership_level": "Silver",
-        "other_info": "Family-owned since 1950"
+        "membership_level": "Silver"
       },
       {
         "name": "Banco Promerica",
-        "address": "789 Elm St, Anytown USA",
-        "phone": "555-9012",
-        "website": "www.123llc.com",
+        "address": "15 Calle 1-04 Zona 10",
+        "phone": "1724",
+        "website": "https://www.bancopromerica.com.gt/",
         "image": "https://nilberth-escobar.github.io/wdd230/chamber/images/banco-promerica.webp",
-        "membership_level": "Bronze",
-        "other_info": "Specializes in eco-friendly products"
+        "membership_level": "Bronze"
       },
       {
         "name": "Farmacia Batres",
-        "address": "246 Maple St, Anytown USA",
-        "phone": "555-3456",
-        "website": "www.acmeinc.com",
+        "address": "2da Calle 32-77 Zona 7, Ofi Bodegas San Mateo",
+        "phone": "1763",
+        "website": "https://farmaciasbatres.com.gt/",
         "image": "https://nilberth-escobar.github.io/wdd230/chamber/images/batres.webp",
-        "membership_level": "Gold",
-        "other_info": "Award-winning customer service"
+        "membership_level": "Gold"
       },
       {
         "name": "Cemex",
-        "address": "369 Pine St, Anytown USA",
-        "phone": "555-7890",
-        "website": "www.smithandsons.com",
+        "address": "ldea el Jobo, Tecún Umán, Sn Marcos",
+        "phone": "7756-8901",
+        "website": "www.cemexguatemala.com/",
         "image": "https://nilberth-escobar.github.io/wdd230/chamber/images/cemex.webp",
-        "membership_level": "Silver",
-        "other_info": "In business since 1985"
+        "membership_level": "Silver"
       },
       {
         "name": "Comex",
-        "address": "258 Cedar St, Anytown USA",
-        "phone": "555-2345",
-        "website": "www.jonesent.com",
+        "address": "5a calle 3-04 zone 1, Sn. Pedro Sac.",
+        "phone": "7760-3363",
+        "website": "www.comex.gt",
         "image": "https://nilberth-escobar.github.io/wdd230/chamber/images/comex.webp",
-        "membership_level": "Bronze",
-        "other_info": "Offers free consultations"
+        "membership_level": "Bronze"
       },
       {
         "name": "Cotzic Restaurant",
-        "address": "147 Birch St, Anytown USA",
-        "phone": "555-6789",
-        "website": "www.greensolutions.com",
+        "address": "9a. Calle 2-96 zona 1, San Marcos",
+        "phone": "7760 4608",
+        "website": "www.facebook.com/restaurantecotzic",
         "image": "https://nilberth-escobar.github.io/wdd230/chamber/images/cotzic.webp",
-        "membership_level": "Gold",
-        "other_info": "Certified organic products"
+        "membership_level": "Gold"
       },
       {
         "name": "Marsa",
         "address": "369 Oak St, Anytown USA",
-        "phone": "555-1234",
-        "website": "www.blueskyco.com",
+        "phone": "5403-1403",
+        "website": "www.marsaescuela.com",
         "image": "https://nilberth-escobar.github.io/wdd230/chamber/images/marsa.webp",
-        "membership_level": "Silver",
-        "other_info": "Family-owned since 1970"
+        "membership_level": "Silver"
       },
       {
         "name": "Miralvalle Hotel&Restaurant",
-        "address": "258 Maple St, Anytown USA",
-        "phone": "555-5678",
-        "website": "www.redrockind.com",
+        "address": "5ta. Calle 2-43, Sn. Pedro Sac.",
+        "phone": "7760-2624",
+        "website": "www.facebook.com/HotelMiralvalle?locale=es_LA",
         "image": "https://nilberth-escobar.github.io/wdd230/chamber/images/miralvalle.webp",
-        "membership_level": "Bronze",
-        "other_info": "Specializes in custom orders"
+        "membership_level": "Bronze"
       },
       {
         "name": "Multiservicios Marquense",
-        "address": "147 Pine St, Anytown USA",
-        "phone": "555-9012",
-        "website": "www.purplepeople.com",
+        "address": "6a. Avenida Zona 3, Sn. Pedro Sac.",
+        "phone": "5529-4516",
+        "website": "www.facebook.com/impresosmarquense",
         "image": "https://nilberth-escobar.github.io/wdd230/chamber/images/multiservicios.webp",
-        "membership_level": "Gold",
-        "other_info": "Offers free shipping on orders over $50"
+        "membership_level": "Gold"
       }
     ]
   }
