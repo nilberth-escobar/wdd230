@@ -284,6 +284,11 @@ p{
   grid-column: 1/2;
 }
 
+.own-info p{
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 1.2rem;
+}
+
 .social-media{
   grid-column: 2/3;
 }
@@ -303,8 +308,9 @@ p{
  font-size: 2rem;
 }
 
+
 .social-media h4{
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .social-media li{
@@ -318,4 +324,11 @@ p{
 
 .contact-info p {
   margin: 5px 0;
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
+.contact-info p, h4{
+  font-size: 1.5rem;
+  margin: auto 0px;
 }
