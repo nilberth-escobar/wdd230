@@ -39,15 +39,21 @@ container-navbar {
 .navbar {
   min-height: 70px;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   align-items: center;
   padding: 10px;
 }
 
+.navbar p{
+  font-family: "Sofia Sans", sans-serif;
+  font-size: 3rem;
+  border: red solid 1px;
+  padding: 20px;
+}
 
-
-.navbar img{
-  width: 100%;
+.nav-branding .logo img{
+  width: 150px;
+  
 }
 
 .nav-branding {

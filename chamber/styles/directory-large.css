@@ -52,5 +52,52 @@
     box-shadow: 5px 5px 10px #000000;
     border-radius: 5px;
   }
+
+  .footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-content: center;
+  }
+  
+  .own-info{
+    grid-column: 1/2;
+  }
+  
+  .social-media{
+    grid-column: 2/3;
+  }
+  
+  .social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-media ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-media i {
+   font-size: 2rem;
+  }
+  
+  .social-media li{
+    margin-top: 15px;
+  }
+  
+  .contact-info{
+    grid-column: 3/4;
+    margin: 5px 0;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
   
 }
