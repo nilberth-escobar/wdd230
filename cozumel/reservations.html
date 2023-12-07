@@ -42,14 +42,34 @@
 
 
     <main>
-        <div class="form-container">
-            <div class="title">
-                <h2>Reservations</h2>
-                <h3>Complete the form below</h3>
-                
+
+        <div class="hero-image">
+            <!-- Hero image section -->
+            <div class="container">
+               
+               <h1>Time to Unwind</h1>
+               <P>
+                With a rental vehicle, perfect for any getaway!
+               </P>
+               <a href="reservations.html" class="make-reservation">
+                   Make Reservation
+               </a>
+
             </div>
 
-            <form method="get" action="reserve-confirmation.html" class="reservation-form"></form>
+            <div class="weatherCard">
+                <h3>Current Weather</h3>
+                <p><span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div class="form-container">
+            <form method="get" action="reserve-confirmation.html">
+
                 <fieldset>
                 <legend><b>Personal Information</b></legend>
                 <label class="top"><b>Full Name</b><span class="ast">*</span> <input type="text" name="name" placeholder="Full Name" pattern="[a-zA-Z\s]{5,}" required></label>                      
