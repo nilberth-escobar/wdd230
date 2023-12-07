@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Cozumel </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+</head>
+<body>
+    <header>
+        <input type ="checkbox" name ="" id ="chk1">
+        <div class="logo"><h1>Scoots</h1></div>
+            <div class="search-box">
+                <form>
+                    <input type ="text" name ="search" id ="srch" placeholder="Search">
+                    <button type ="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rentals</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li><a href="#">Contact</a></li>
+                <li>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                      
+                </li>
+            </ul>
+            <div class="menu">
+                <label for="chk1">
+                    <i class="fa fa-bars"></i>
+                </label>
+            </div>
+    </header>
+
+    <main>
+
+        <div class="rentals-hero">
+            <!-- Hero image section -->
+            <div class="container">
+               
+               <h1>Time to Unwind</h1>
+               <P>
+                With a rental vehicle, perfect for any getaway!
+               </P>
+               <a href="reservations.html" class="make-reservation">
+                   Make Reservation
+               </a>
+
+            </div>
+
+            <div class="weatherCard">
+                <h3>Current Weather</h3>
+                <p><span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+        </div>
+
+
+        <div class="table-container">
+            <div class="rent-info">
+                <table class='rental-table' id="rentalTable">
+
+                    <caption>Max People and Prices</caption>
+                    <thead>
+                        
+                        <tr>
+                            <th colspan="2"></th>
+                            <th data-cell="reservation" colspan="2">Reservations</th>
+                            <th colspan="2" >Walk Ins</th>
+                        </tr>
+                        <tr>
+                            <th>Rental Type</th>
+                            <th>Max. Persons</th>
+                            <th>Half Day (3 hrs)</th>
+                            <th>Full Day</th>
+                            <th>Half Day (3 hrs)</th>
+                            <th>Full Day</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Data rows will be dynamically added here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <section class="agreements">
+            <h2>Rental Services and Agreements</h2>
+            <div class="agreement-container">
+                <button class="accordion">See the Rental Agreements</button>
+                <div class="panel">
+                <ul>
+                    <li>A $50 security deposit is required to confirm reservations.</li>
+                    <li>A valid drivers license is required in hand at the time of rental.</li>
+                    <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                    <li>Fuel charge is not included.</li>
+                    <li>Unlimited mileage.</li>
+                    <li>Liability insurance is included.</li>
+                    <li>Damage insurance is available for purchase.</li>
+                    <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                    <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                    <li>Rentals may be returned to either physical location.</li>
+                </ul>
+                </div>            
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="own-info">
+                <p>&#169; <span id="currentYear"></span> Nilberth Escobar</p>
+                <p>BYU-I WDD230 | Chamber of Commerce Project</p>
+                <p id="lastModified">Last modification</p>
+            </div>
+    
+            
+                <div class="social-media">
+                    <h4>Connect With Us</h4>
+                    <ul>
+                        <li><a href="#" target="_blank" ><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="#" target="_blank" ><i class="bi bi-twitter"></i></a></li>
+                        <li><a href="#" target="_blank" ><i class="bi bi-instagram"></i></a></li>
+                        <!-- Add more social media icons as needed -->
+                    </ul>
+                </div>
+    
+                <div class="contact-info">
+                    <h4>Contact Information</h4>
+                    <p>Email: info@example.com</p>
+                    <p>Phone: +1 (123) 456-7890</p>
+                    <p>Address: 123 Main Street, Palo Gordo</p>
+                </div>
+                
+                <!-- Add any additional site information here, such as terms of service, privacy policy, etc. -->
+            
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/rental.js"></script>
+    <script src="scripts/accordion.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,555 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+/*
+.hero-image{
+    background: url(../images/cozumel-large-hero.webp);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+} 
+*/
+
+.hero-image {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    background: url("../images/cozumel-large-hero.webp") no-repeat center;
+    background-size: cover;
+}
+
+
+.hero-image {
+    max-width: 100%;
+    position: relative;
+}
+
+picture img {
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    top: 25%;
+    left: 30%;
+    overflow: hidden;
+    color: var(--accent1-color);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 800;
+    z-index: 1;
+}
+
+.container h1 {
+    margin-top: 20px;
+    font-size: 35px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.container p {
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.make-reservation {
+    border: 3px solid transparent;
+    line-height: 1.5;
+    padding: 0.4rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-color: #dd4e1a;
+}
+
+.make-reservation:hover {
+    background-color: #dd4e1a;
+    color: #fff;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    box-shadow: 0 0 10px #000;
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+#chk1 {
+    display: none;
+
+}
+
+i {
+    color: #fff;
+    cursor: pointer;
+}
+
+header .logo {
+    flex: 1;
+    color: #fff;
+
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+header .search-box {
+    flex: 1;
+    position: relative;
+}
+
+.search-box input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #f2f2f2;
+    border-radius: 30px;
+    color: gray;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 40px;
+    text-align: center;
+
+}
+
+.search-box button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0.9);
+    background: green;
+    color: #fff;
+}
+
+header ul {
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+
+header ul li a:hover {
+    border-bottom: 2px solid cadetblue;
+}
+
+header .menu {
+    font-size: 2.5em;
+    display: none;
+}
+
+
+/*==Slider==========================*/
+#p_slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 90%;
+    min-height: 100vh;
+    margin: auto;
+}
+
+.product-box {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.product-box-img {
+    width: 300px;
+    height: 370px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    position: relative;
+    padding: 20px;
+}
+
+.product-box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    overflow: visible;
+}
+
+.product-box-img::before,
+.product-box-img::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 370px;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    top: 10%;
+    left: -10%;
+    border: 2px solid #e7e7e7;
+    border-radius: 50%;
+    z-index: -1;
+    transform: rotate(-50deg);
+    animation-name: rotate2;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.product-box-img::after {
+    border: 2px solid #1295d1c0;
+    animation-name: rotate;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-360deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate2 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.product-box-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.product-box-text a {
+    color: #333333;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.product-box-text span {
+    color: #535353;
+    font-weight: 600;
+}
+
+.mySwiper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper-pagination {
+    position: static !important;
+    margin-top: 70px;
+}
+
+.swiper-pagination-progressbar-fill {
+    background: #2b2b2b !important;
+}
+
+.swiper-pagination-progressbar {
+    background: #e2e2e2 !important;
+    height: 3px !important;
+    border-radius: 4px !important;
+}
+
+@media(max-width:400px) {
+    .product-box-img {
+        width: 80%;
+        height: 300px;
+    }
+
+    .product-box-img::before,
+    .product-box-img::after {
+        width: 90%;
+        height: 300px;
+        top: 0%;
+        left: 5%;
+    }
+}
+
+@media(max-width:330px) {
+    .product-box-img {
+        width: 80%;
+        height: 250px;
+    }
+
+    .product-box-img::before,
+    .product-box-img::after {
+        width: 90%;
+        height: 250px;
+        top: 0%;
+        left: 5%;
+    }
+}
+
+/* ***********RENTAL TABLE*********** */
+
+
+.rental-table {
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+#rentalTable td,
+#rentalTable th {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+
+}
+
+#rentalTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+    text-align: center;
+}
+
+#rentalTable td {
+    text-align: center;
+}
+
+.rental-table caption {
+    font-size: 1.5em;
+}
+
+.rental-table {
+    border: #04AA6D solid 2px;
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    height: 400px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#rentalTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#rentalTable tr:hover {
+    background-color: #ddd;
+}
+
+.rentals-hero {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    background: url("../images/rent-hero.webp") no-repeat center;
+    background-size: cover;
+    margin-bottom: 15px;
+}
+
+
+.rentals-hero {
+    max-width: 100%;
+    position: relative;
+}
+
+picture img {
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    top: 25%;
+    left: 30%;
+    overflow: hidden;
+    color: var(--accent1-color);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 800;
+    z-index: 1;
+}
+
+.container h1 {
+    margin-top: 20px;
+    font-size: 35px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.container p {
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.make-reservation {
+    border: 3px solid transparent;
+    line-height: 1.5;
+    padding: 0.4rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-color: #dd4e1a;
+}
+
+.make-reservation:hover {
+    background-color: #dd4e1a;
+    color: #fff;
+}
+
+/*=====ACCORDION AGREETMENT STYLING======*/
+
+.agreements{
+    border: #04AA6D solid 2px;
+    width: 600px;
+    margin: auto;
+}
+
+.agreements h2{
+    padding: 30px;
+    text-align: center;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color:#04AA6D; 
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-size: 15px;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+    background-color: #dd4e1a;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 10px 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.panel ul li{
+    list-style: none;
+    padding: 10px;
+}
+
+
+
+/*=====FOOTER======*/
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.own-info {
+    grid-column: 1/2;
+}
+
+.social-media {
+    grid-column: 2/3;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media i {
+    font-size: 2rem;
+}
+
+.social-media li {
+    margin-top: 15px;
+}
+
+.contact-info {
+    grid-column: 3/4;
+    margin: 5px 0;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
