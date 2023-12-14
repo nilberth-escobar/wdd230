@@ -14,14 +14,22 @@
 } 
 */
 
+main {
+    background-color: #8AE1FC;
+}
+
 .hero-image {
     position: relative;
     height: 600px;
     overflow: hidden;
     background: url("../images/cozumel-large-hero.webp") no-repeat center;
     background-size: cover;
+    
 }
 
+.logo a img {
+    width: 300px;
+}
 
 .hero-image {
     max-width: 100%;
@@ -667,6 +675,7 @@ picture img {
     border: #04AA6D solid 2px;
     width: 600px;
     margin: auto;
+    margin-top: 10px;
 }
 
 .agreements h2 {
@@ -729,6 +738,7 @@ picture img {
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
     align-content: center;
+    margin-top: 15px;
 }
 
 .own-info {

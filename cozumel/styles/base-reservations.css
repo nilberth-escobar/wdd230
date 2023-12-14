@@ -142,7 +142,7 @@ input[type="submit"]:hover {
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
     align-content: center;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 .own-info {
@@ -184,3 +184,4 @@ input[type="submit"]:hover {
 .hero-image .message {
     background-color: white;
 }
+

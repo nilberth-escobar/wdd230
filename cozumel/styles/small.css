@@ -23,5 +23,58 @@
         right: 0;
         
     }
+
+    .product-detail {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
   
 }
+
+@media only screen and (max-width: 768px) {
+    /* Responsive layout for product-detail */
+    .product-container {
+      width: 100%;
+    }
+  
+    /* Responsive layout for rental-table */
+    .rent-info {
+      overflow-x: auto;
+    }
+  
+    .rental-table {
+      width: 100%;
+    }
+  
+    /* Responsive layout for agreements container */
+    .agreements {
+      width: 100%;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      /* Responsive layout for the social-media and contact-info sections */
+      .social-media,
+      .contact-info {
+        margin-top: 20px;
+      }
+    
+      .social-media ul,
+      .contact-info {
+        margin: 10px;
+      }
+    
+      /* Reset margin for the last li in social-media */
+      .social-media ul li:last-child {
+        margin-right: 0;
+      }
+  }
