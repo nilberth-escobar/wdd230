@@ -1,0 +1,252 @@
+.contact-hero {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    background: url("../images/contact-hero.webp") no-repeat center;
+    background-size: cover;
+    margin-bottom: 15px;
+}
+
+.contact-hero {
+    max-width: 100%;
+    position: relative;
+}
+
+picture img {
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    top: 25%;
+    left: 30%;
+    overflow: hidden;
+    color: var(--accent1-color);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 800;
+    z-index: 1;
+}
+
+.container h1 {
+    margin-top: 20px;
+    font-size: 1.6rem;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.container p {
+    font-size: 2.6rem;
+    margin-bottom: 50px;
+    color: #fff;
+
+}
+
+.container a {
+    text-decoration: none;
+}
+
+.make-reservation {
+    border: 3px solid transparent;
+    line-height: 1.5;
+    padding: 0.4rem 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-color: #dd4e1a;
+}
+
+.make-reservation:hover {
+    background-color: #dd4e1a;
+    color: #fff;
+}
+
+/*=====CONTACT FORM AND MAP======*/
+.social a{
+	padding: 20px;
+	color:red;
+	font-size:1.1rem;
+    margin: 0 10px auto; 
+}
+#contact{
+	border: red 1px solid;
+    gap: 20px;
+	
+	display: flex;
+	align-items: center;
+    justify-content: center;
+}
+.social{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    background-color: #434445;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+}
+
+.social a i:hover{
+	color:#000000;
+	transition: all ease 0.3s;
+}
+
+.contact-box{
+	background-color:#434445;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 30px;
+	box-shadow: 2px 0px 30px rgba(0,0,0,0.1);
+}
+.c-heading h1{
+	font-family: Roboto;
+	color: #e7eef3;
+	font-size: 2.5rem;
+	font-weight: lighter;
+	margin: 0px;
+	padding: 0px;
+}
+.c-heading p{
+	font-family: Roboto;
+	color:#cecece;
+	font-size: 0.8rem;
+	font-weight: lighter;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+.c-inputs{
+	margin: 15px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.c-inputs input{
+	width:250px;
+	height: 45px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid rgba(251,251,251,0.1);
+	outline: none;
+	margin: 10px 0px;
+	padding: 10px;
+	box-sizing: border-box;
+	color: #f4f4f4;
+	display: flex;
+}
+.c-inputs textarea{
+	width:250px !important;
+	height: 200px !important;
+	outline: none;
+	background-color: transparent;
+	border:1px solid rgba(82,82,82,1);
+	color: #f4f4f4;
+	padding: 10px;
+	font-size: 1.2rem;
+	box-sizing: border-box;
+}
+.c-inputs button{
+	width:200px;
+	height: 40px;
+	background-color: #FFFFFF;
+	border: none;
+	outline: none;
+	margin-top: 20px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+	letter-spacing: 1px;
+}
+.c-inputs input:focus{
+	border-bottom: 1px solid rgba(252,252,252,1.00);
+	transition: all ease 0.5s;
+}
+.c-inputs textarea:focus{
+	border: none;
+	border-bottom: 1px solid rgba(255,255,255,1.00);
+	transition: all ease 0.5s;
+	background-color: rgba(0,0,0,0.1);
+}
+.c-inputs button:active{
+	transform: scale(1.02);
+}
+.map{
+	filter: grayscale(0.2);
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+	border: 2px solid #FFFFFF;
+}
+@media(max-width:1100px){
+	.map{
+		display: none;
+	}
+}
+@media(max-width:450px){
+	.social{
+		display: none;
+	}
+	.contact-box{
+		width: 100%;
+		height: 100vh;
+		box-sizing: border-box;
+	}
+	#contact{
+		position: static;
+		transform: translate(0,0);
+		width:100%;
+		height: 100vh;
+		box-sizing: border-box;
+	}
+	.c-heading h1{
+		font-size: 2.2rem;
+		text-align: center;
+	}
+	
+}
+ 
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 10px;
+}
+
+.own-info {
+    grid-column: 1/2;
+}
+
+.social-media {
+    grid-column: 2/3;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media i {
+    font-size: 2rem;
+}
+
+.social-media li {
+    margin-top: 15px;
+}
+
+.contact-info {
+    grid-column: 3/4;
+    margin: 5px 0;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}

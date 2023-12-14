@@ -34,8 +34,7 @@ picture img {
 
 .container {
     position: relative;
-    top: 25%;
-    left: 30%;
+    margin: 90px auto;
     overflow: hidden;
     color: var(--accent1-color);
     transform: translate(-50%, -50%);
@@ -45,14 +44,14 @@ picture img {
 }
 
 .container h1 {
-    margin-top: 20px;
-    font-size: 35px;
+    margin-top: 50px;
+    font-size: 1.6rem;
     margin-bottom: 50px;
     color: #fff;
 }
 
 .container p {
-    font-size: 20px;
+    font-size: 1.6rem;
     margin-bottom: 50px;
     color: #fff;
 }
@@ -68,6 +67,8 @@ picture img {
     font-size: 1.2rem;
     font-weight: 500;
     border-color: #dd4e1a;
+    background-color: #04AA6D;
+    opacity: .8;
 }
 
 .make-reservation:hover {
@@ -179,6 +180,7 @@ header .menu {
     width: 90%;
     min-height: 100vh;
     margin: auto;
+    border: red 1px solid;
 }
 
 .product-box {
@@ -329,6 +331,219 @@ header .menu {
     }
 }
 
+
+/* ***********RENTAL PAGE*********** */
+/* ***********PRODUCT FEATURES*********** */
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.product-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    
+}
+
+.product-container .card img {
+    height: 150px;
+
+    object-fit: cover;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+
+}
+
+.product-container .card {
+    position: relative;
+    height: 450px;
+    width: 320px;
+    background: #232323;
+    border-radius: 8%;
+    overflow: hidden;
+}
+
+.product-container .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #EEE3CB;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.product-container .card:hover::before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+.product-container .card::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+}
+
+.product-container .card .image {
+    position: absolute;
+    top: 50%;
+    left: -13px;
+    transform: translateY(-50%) rotateY(180deg);
+    z-index: 10000;
+    width: 100%;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.product-container .card:hover .image {
+    top: 0%;
+    transform: translateY(0%) rotateY(180deg);
+}
+
+.product-container .card .image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(25deg);
+    width: 270px;
+}
+
+.product-container .card .content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.product-container .card:hover .content {
+    height: 210px;
+}
+
+.product-container .card .content h2 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.product-container .card .content .size,
+.product-container .card .content .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.product-container .card:hover .content .size {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.product-container .card:hover .content .color {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+}
+
+.product-container .card .content .size h3,
+.product-container .card .content .color h3 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px
+}
+
+.product-container .card .content .size p {
+
+    height: 50px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 0 3px;
+}
+
+.product-container .card .content .size span:hover {
+    background-color: #EEE3CB;
+}
+
+.product-container .card .content .color span {
+    width: 20px;
+    height: 20px;
+    background: #ff0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.product-container .card .content .color span:nth-child(2) {
+    background: #EEE3CB;
+}
+
+.product-container .card .content .color span:nth-child(3) {
+    background: #d63c49;
+}
+
+.product-container .card .content .color span:nth-child(4) {
+    background: #366ae8;
+}
+
+.product-container .card .content a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+
+.product-container .card:hover .content a {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+    background: #EEE3CB;
+}
+
 /* ***********RENTAL TABLE*********** */
 
 
@@ -387,13 +602,12 @@ header .menu {
 
 .rentals-hero {
     position: relative;
-    height: 600px;
+    height: 450px;
     overflow: hidden;
-    background: url("../images/rent-hero.webp") no-repeat center;
+    background: url("../images/rentals_hero.webp") no-repeat center;
     background-size: cover;
     margin-bottom: 15px;
 }
-
 
 .rentals-hero {
     max-width: 100%;
@@ -449,19 +663,20 @@ picture img {
 
 /*=====ACCORDION AGREETMENT STYLING======*/
 
-.agreements{
+.agreements {
     border: #04AA6D solid 2px;
     width: 600px;
     margin: auto;
 }
 
-.agreements h2{
+.agreements h2 {
     padding: 30px;
     text-align: center;
 }
+
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color:#04AA6D; 
+    background-color: #04AA6D;
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -499,12 +714,10 @@ picture img {
     overflow: hidden;
 }
 
-.panel ul li{
+.panel ul li {
     list-style: none;
     padding: 10px;
 }
-
-
 
 /*=====FOOTER======*/
 .footer {
@@ -552,4 +765,156 @@ picture img {
 
 .contact-info p {
     margin: 5px 0;
+}
+
+.hero-image .message {
+    background-color: white;
+}
+
+/*=====COLSE MESSAGE======*/
+.message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    position: relative;
+    font-size: 2rem;
+}
+
+#close-message {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #721c24;
+}
+
+/*CURRENT WEATHER IN THE HERO IMAGE*/
+.weatherCard {
+    position: relative;
+    max-width: 200px;
+    margin-left: 10px;
+    border-radius: 5px;
+    opacity: 0.65;
+}
+
+.weatherCard {
+    text-align: center;
+    background-color: #598392;
+
+}
+
+.weatherCard {
+    border-radius: 10px;
+    backdrop-filter: blur(17px) saturate(163%);
+    -webkit-backdrop-filter: blur(17px) saturate(163%);
+    background-color: rgba(177, 45, 45, 0.07);
+    color: white;
+    opacity: .7;
+}
+
+figcaption::first-letter {
+    text-transform: uppercase;
+}
+
+figcaption {
+    font-size: 1.4rem;
+}
+
+/*===========*/
+
+.weather h3 {
+    text-align: center;
+    font-family: "Sofia Sans";
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+/*=====WEATHER FORECAST======*/
+
+.weather {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.weather h4 {
+    font-size: 24px;
+}
+
+/* FORECAST SECTION */
+#forecast {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 1rem auto;
+    border: 1px solid #fff;
+}
+
+.forecast-item {
+    text-align: center;
+    border-right: 1px solid #fff;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.forecast-item p::first-letter {
+    text-transform: capitalize;
+}
+
+.forecast-item h3,
+p,
+span {
+    margin-top: 5px;
+
+}
+
+.forecast-item img {
+    margin-top: 5px;
+    max-width: 100%;
+}
+
+.forecast-item h3 {
+    background-color: var(--accent1-color);
+    padding: 15px;
+    font-size: 25px;
+    font-family: "Sofia Sans", sans-serif;
+}
+
+.forecast-item p,
+span {
+    font-size: 25px;
+    font-family: "Sofia Sans", sans-serif;
+}
+
+.weather h3 {
+    text-align: center;
+    font-family: "Sofia Sans";
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.next-weather {
+    position: absolute;
+
+    top: 80%;
+
+    left: 80%;
+
+    transform: translate(-50%, -50%);
+}
+
+.next-weather {
+    width: 260px;
+    text-align: center;
+
+
+    border-radius: 10px;
+    backdrop-filter: blur(17px) saturate(163%);
+    -webkit-backdrop-filter: blur(17px) saturate(163%);
+    background-color: rgba(177, 45, 45, 0.07);
+    color: white;
+    opacity: .7;
 }

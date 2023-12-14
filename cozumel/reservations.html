@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scoots - Cozumel </title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/base-reservations.css">
 </head>
+
 <body>
     <header>
-        <input type ="checkbox" name ="" id ="chk1">
-        <div class="logo"><h1>Scoots</h1></div>
-            <div class="search-box">
-                <form>
-                    <input type ="text" name ="search" id ="srch" placeholder="Search">
-                    <button type ="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Rentals</a></li>
-                <li><a href="#">Reservations</a></li>
-                <li><a href="#">Contact</a></li>
-                <li>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                      
-                </li>
-            </ul>
-            <div class="menu">
-                <label for="chk1">
-                    <i class="fa fa-bars"></i>
-                </label>
-            </div>
+        <input type="checkbox" name="search" id="chk1">
+        <div class="logo">
+            <h1>Scoots</h1>
+        </div>
+        <div class="search-box">
+            <form>
+                <input type="text" name="search" id="srch" placeholder="Search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+
+            </li>
+        </ul>
+        <div class="menu">
+            <label for="chk1">
+                <i class="fa fa-bars"></i>
+            </label>
+        </div>
     </header>
 
 
@@ -46,86 +52,79 @@
         <div class="hero-image">
             <!-- Hero image section -->
             <div class="container">
-               
-               <h1>Time to Unwind</h1>
-               <P>
-                With a rental vehicle, perfect for any getaway!
-               </P>
-               <a href="reservations.html" class="make-reservation">
-                   Make Reservation
-               </a>
 
-            </div>
+                <h1>Time to Unwind</h1>
+                <P>
+                    With a rental vehicle, perfect for any getaway!
+                </P>
+                <a href="reservations.html" class="make-reservation">Make Reservation</a>
 
-            <div class="weatherCard">
-                <h3>Current Weather</h3>
-                <p><span id="current-temp"></span></p>
-                <figure>
-                    <img id="weather-icon" src="" alt="">
-                    <figcaption></figcaption>
-                </figure>
             </div>
         </div>
 
-        <div class="form-container">
+        <div class="form-container" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
             <form method="get" action="reserve-confirmation.html">
 
                 <fieldset>
-                <legend><b>Personal Information</b></legend>
-                <label class="top"><b>Full Name</b><span class="ast">*</span> <input type="text" name="name" placeholder="Full Name" pattern="[a-zA-Z\s]{5,}" required></label>                      
-                <label class="top"><b>Email</b><span class="ast">*</span> <input type="email" name="email" placeholder="email@address.com" required></label>
-                <label class="top"><b>Phone Number</b><span class="ast">*</span> <input type="tel" name="phone" placeholder="1234567801" required></label>
-                <label class="top"><b>Country</b><input type="text" name="country"></label>
-                <label class="top"><b>Cruise Line (If Applicable)</b><input id="cruiseLine" type="text"></label>
+                    <legend><b>Personal Information</b></legend>
+                    <label class="top"><b>Full Name</b><span class="ast">*</span> <input type="text" name="name"
+                            placeholder="Full Name" pattern="[a-zA-Z\s]{5,}" required></label>
+                    <label class="top"><b>Email</b><span class="ast">*</span> <input type="email" name="email"
+                            placeholder="email@address.com" required></label>
+                    <label class="top"><b>Phone Number</b><span class="ast">*</span> <input type="tel" name="phone"
+                            placeholder="1234567801" required></label>
+                    <label class="top"><b>Country</b><input type="text" name="country"></label>
+                    <label class="top"><b>Cruise Line (If Applicable)</b><input id="cruiseLine" type="text"></label>
                 </fieldset>
-    
+
                 <fieldset>
-                <legend><b>Rental Details</b></legend>
-                <label class="top"><b>Rental Date</b> <input type="date" name="date"></label>
-                <label class="top"><b>Rental Type</b>
-                    <input list="vehicles" name="vehicletype" placeholder="Select Vehicle">
-                    <datalist id="vehicles">
-                        <option value="" selected disabled hidden>Select Vehicle</option>
-                        <option value="Honda Metro Scooter">Honda Metro Scooter</option>
-                        <option value="Honda Dio Scooter">Honda Dio Scooter</option>
-                        <option value="Honda PCX150 Scooter">Honda PCX150 Scooter</option>
-                        <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
-                        <option value="Jeep Wrangler - 4 door with A/C">Jeep Wrangler - 4 door with A/C</option>
-                        <option value="Jeep Wrangler - 2 door">Jeep Wrangler - 2 door</option>
-                    </datalist>
-                </label>
-    
-                <label class="top"><b>Rental Period</b>
-                    <select class="period" name="period">
-                    <option value="" selected disabled hidden>Select Period</option>
-                    <option value="half day">Half Day</option>
-                    <option value="one day">One Day</option>
-                    <option value="two days">Two Days</option>
-                    <option value="three days">Three Days</option>
-                    <option value="four days">Four Days</option>
-                    <option value="five days">Five Days</option>
-                    <option value="two days">Six Days</option>
-                    <option value="three days">One Week</option>
-                    </select>
-                </label>
-    
-                <div class="divlabel"><b>Contact Preference</b></div>
-                <label class="sbs"><input type="radio" name="in-danger" value="yes"> Phone</label>
-                <label class="sbs"><input type="radio" name="in-danger" value="maybe"> Email</label>
+                    <legend><b>Rental Details</b></legend>
+                    <label class="top"><b>Rental Date</b> <input type="date" name="date"></label>
+                    <label class="top"><b>Rental Type</b>
+                        <input list="vehicles" name="vehicletype" placeholder="Select Vehicle">
+                        <datalist id="vehicles">
+                            <option value="" selected disabled hidden>Select Vehicle</option>
+                            <option value="Honda Metro Scooter">Honda Metro Scooter</option>
+                            <option value="Honda Dio Scooter">Honda Dio Scooter</option>
+                            <option value="Honda PCX150 Scooter">Honda PCX150 Scooter</option>
+                            <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
+                            <option value="Jeep Wrangler - 4 door with A/C">Jeep Wrangler - 4 door with A/C</option>
+                            <option value="Jeep Wrangler - 2 door">Jeep Wrangler - 2 door</option>
+                        </datalist>
+                    </label>
+
+                    <label class="top"><b>Rental Period</b>
+                        <select class="period" name="period">
+                            <option value="" selected disabled hidden>Select Period</option>
+                            <option value="half day">Half Day</option>
+                            <option value="one day">One Day</option>
+                            <option value="two days">Two Days</option>
+                            <option value="three days">Three Days</option>
+                            <option value="four days">Four Days</option>
+                            <option value="five days">Five Days</option>
+                            <option value="two days">Six Days</option>
+                            <option value="three days">One Week</option>
+                        </select>
+                    </label>
+
+                    <div class="divlabel"><b>Contact Preference</b></div>
+                    <label class="sbs"><input type="radio" name="in-danger" value="yes"> Phone</label>
+                    <label class="sbs"><input type="radio" name="in-danger" value="maybe"> Email</label>
                 </fieldset>
-    
+
                 <fieldset>
-                <legend><b>Additional Information</b></legend>
-                <label class="top"><b>Comments</b> <textarea name="comments" placeholder="Do you have any special requests?" rows="7"></textarea></label>
+                    <legend><b>Additional Information</b></legend>
+                    <label class="top"><b>Comments</b> <textarea name="comments"
+                            placeholder="Do you have any special requests?" rows="7"></textarea></label>
                 </fieldset>
-    
+
                 <div class="button-div">
-                <input type="submit" value="Submit Reservation" class="submitBtn">
-                </div>            
-    
+                    <input type="submit" value="Make Reservation" class="submitBtn">
+                </div>
+
             </form>
         </div>
-        
+
     </main>
 
 
@@ -137,28 +136,27 @@
                 <p id="lastModified">Last modification</p>
             </div>
 
-            
-                <div class="social-media">
-                    <h4>Connect With Us</h4>
-                    <ul>
-                        <li><a href="#" target="_blank" ><i class="bi bi-facebook"></i></a></li>
-                        <li><a href="#" target="_blank" ><i class="bi bi-twitter"></i></a></li>
-                        <li><a href="#" target="_blank" ><i class="bi bi-instagram"></i></a></li>
-                        <!-- Add more social media icons as needed -->
-                    </ul>
-                </div>
 
-                <div class="contact-info">
-                    <h4>Contact Information</h4>
-                    <p>Email: info@example.com</p>
-                    <p>Phone: +1 (123) 456-7890</p>
-                    <p>Address: 123 Main Street, Palo Gordo</p>
-                </div>
-                
-                <!-- Add any additional site information here, such as terms of service, privacy policy, etc. -->
-            
+            <div class="social-media">
+                <h4>Connect With Us</h4>
+                <ul>
+                    <li><a href="#" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="bi bi-twitter"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                    <!-- Add more social media icons as needed -->
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <h4>Contact Information</h4>
+                <p>Email: info@example.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+                <p>Address: 123 Main Street, Palo Gordo</p>
+            </div>
+
         </div>
     </footer>
 
 </body>
+
 </html>

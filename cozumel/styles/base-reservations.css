@@ -1,17 +1,27 @@
-
-
 .hero-image {
     position: relative;
     height: 600px;
     overflow: hidden;
-    background: url("../images/cozumel-large-hero.webp") no-repeat center;
+    background: url("../images/reservations_hero.webp") no-repeat center;
     background-size: cover;
 }
 
+.container {
+    margin-top: 90px;
+}
+
+.container a {
+    font-size: 1.6rem;
+}
+
+.container p, h1 {
+    font-size: 1.6rem;
+}
 
 .hero-image {
     max-width: 100%;
     position: relative;
+    margin-bottom: 10px;
 }
 
 picture img {
@@ -19,32 +29,31 @@ picture img {
 }
 
 .form-container {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 80%;
-  max-width: 500px;
-  margin: auto;
-  
-}
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
 
-.rental-form {
-  display: flex;
-  flex-direction: column;
+    height: 1300px;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.384);
+    border-width: 0;
 }
 
 form fieldset {
     margin: 2rem 2%;
     padding: 0 4% 2rem 4%;
-    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.384);
-    border-width: 0;
+
+    /*box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.384);
+    border-width: 0;*/
 }
 
 form legend {
     font-size: 1.2rem;
     margin: 0 1rem;
-    padding: 0 .5rem;
+    padding: 0 0.5rem;
     color: #292828d7;
 }
 
@@ -57,7 +66,7 @@ form div {
 form label.top input,
 form label.top select,
 form label.top textarea {
-   
+
     display: block;
     font-size: 1rem;
     border: solid 1px #999;
@@ -89,8 +98,6 @@ form label.top input:required:valid {
     border-left: rgb(4, 202, 4) solid 4px;
 }
 
-
-
 /*--------- submit button -------- --*/
 
 .form-container label.top select.period {
@@ -113,12 +120,67 @@ form input.submitBtn {
     max-width: 13rem;
     height: 2.7rem;
     font-size: 1.2rem;
-  }
+}
 
-  input[type="submit"]:hover {
+input[type="submit"]:hover {
     background-color: #fb5012;
-  }
+}
 
-  form div.button-div {
-    margin: 0 0 2rem 2%;
-  }
+.button-div {
+    display: flex;
+    justify-content: center;
+}
+
+/*-- - - - - - footer */
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 15px;
+}
+
+.own-info {
+    grid-column: 1/2;
+}
+
+.social-media {
+    grid-column: 2/3;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media i {
+    font-size: 2rem;
+}
+
+.social-media li {
+    margin-top: 15px;
+}
+
+.contact-info {
+    grid-column: 3/4;
+    margin: 5px 0;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.hero-image .message {
+    background-color: white;
+}
